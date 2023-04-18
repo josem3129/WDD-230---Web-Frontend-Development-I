@@ -1,0 +1,31 @@
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+header div {
+    padding: 5%;
+}
+#Name {
+    margin-top: 25%;
+    text-align: center;
+    color: white;
+}
+
+main div{
+    text-align: center;
+}
+main div ul {
+    display: inline-block;
+}
+body {
+    max-width: 760px;
+}
+footer{
+    text-align: center;
+    color: white;
+}
+footer, header {
+    background-color: rgb(66, 69, 225);
+    border-radius: 25px;
+}
