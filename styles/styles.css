@@ -1,15 +1,17 @@
+
 header{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    text-align: center;
     
 }
 header div {
-    padding: 5%;
+    padding-top: 40px;
+    text-align: center;
 }
 #Name {
-    margin-top: 25%;
-    text-align: center;
-    color: white;
+    color: purple;
+    font-size: 2.5rem;
 }
 
 main div{
@@ -19,15 +21,20 @@ main div ul {
     display: inline-block;
 }
 body {
-    max-width: 760px;
-    margin: 1.25rem auto;
+    font-family: 'Poppins', sans-serif;
 }
 footer{
     text-align: center;
     color: white;
+    font-size: .5rem;
 }
 footer, header {
-    background-color: rgb(66, 69, 225);
-    border-radius: 25px;
+    background-color: rgb(220, 217, 21);
+    margin: 0%;
+}
+
+#imgFamily {
+    max-width: 250px;
+    height: auto;
 }
 

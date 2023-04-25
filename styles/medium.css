@@ -1,0 +1,31 @@
+@media only screen and (min-width: 32.5em){
+    #Name {       
+        color: white;
+        font-size: 3.5rem;
+    }
+    footer, header {
+        background-color: rgb(66, 69, 225);
+        border-radius: 25px;
+    }
+    footer{
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+    body {
+        max-width: 760px;
+        margin: 1.25rem auto;
+        font-family: 'Poppins', sans-serif;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    header div {
+        padding: 5%;
+    }
+    #imgFamily {
+        max-width: 350px;
+        height: auto;
+    }
+}
