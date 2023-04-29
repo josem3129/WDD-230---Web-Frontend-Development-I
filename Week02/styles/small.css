@@ -1,0 +1,32 @@
+body{
+    max-width: 750px;
+    margin: 1.25rem auto;
+
+}
+main{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+   
+}
+header{
+    text-align: center;
+    background-color: #B07BAC;
+}
+body main div{
+    width: 200px;
+    float: left;
+    background-color: #DBF9F4;
+    border-style: solid;
+    border-radius: 2%;
+}
+.webImg{
+    max-width: 200px;
+}
+#thirds, #space{
+    margin-left: 65px;
+}
+
+h3, h4 {
+    background-color: #5F7367;
+    margin: ;
+}
