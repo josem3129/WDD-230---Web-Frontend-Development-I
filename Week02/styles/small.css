@@ -5,28 +5,51 @@ body{
 }
 main{
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 1fr;
    
 }
-header{
+header, footer{
     text-align: center;
-    background-color: #B07BAC;
+    background-color: #655560;
+    margin: 0%;
 }
-body main div{
-    width: 200px;
-    float: left;
-    background-color: #DBF9F4;
-    border-style: solid;
-    border-radius: 2%;
+footer{
+    font-size: 20px;
 }
 .webImg{
-    max-width: 200px;
-}
-#thirds, #space{
-    margin-left: 65px;
+    max-width: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+
 }
 
-h3, h4 {
+h3{
     background-color: #5F7367;
-    margin: ;
+    margin: 0%;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
 }
+
+h4, a, p {
+    padding-left: 4px;
+}
+
+p {
+    text-align: center;
+}
+#thirds,#space, #hierarchy{
+    width: 220px;
+    background-color: #C4CAD0;
+    border-style: solid;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#thirds, #space, #hierarchy{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+

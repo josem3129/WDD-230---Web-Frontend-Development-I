@@ -1,0 +1,27 @@
+@media only screen and (min-width: 32.5em){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    #space{
+        grid-column: span 2;
+        width: 460px;
+        background-color: #C4CAD0;
+        border-style: solid;
+        border-radius: 20px 20px 0px 0px;
+    }
+  
+    #thirds{
+        margin-left: 5px;
+    } 
+    #hierarchy{
+        margin-right: 5px;
+    }
+    #space img{
+        max-width: 850px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
