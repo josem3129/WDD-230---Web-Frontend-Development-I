@@ -1,6 +1,7 @@
 body{
     max-width: 750px;
     margin: 1.25rem auto;
+    font-family: 'Playfair Display', serif;
 
 }
 main{
@@ -12,6 +13,7 @@ header, footer{
     text-align: center;
     background-color: #655560;
     margin: 0%;
+    font-family: 'Raleway', sans-serif;
 }
 footer{
     font-size: 20px;
