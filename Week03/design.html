@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is to show the color scheme of the project that ill be building">
     <title>Document</title>
+    <!--Stiles links-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Kanit:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div id="webInfo">
+            <img id="logo" src="images/logo.png" alt="logo">
+            <h1>Nampa Chamber of Commerce</h1>
+
+        </div>
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div>
+                <a href="design.html">Design</a>
+            </div>
+            <div>
+                <a href="target-audience.html">Target audiance</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Style Guide</h2>
+        <h3>Color palette: <a
+                href="https://coolors.co/b3001b-262626-255c99-7ea3cc-ccad8f">https://coolors.co/b3001b-262626-255c99-7ea3cc-ccad8f</a>
+        </h3>
+        <section id="colorName">
+            <div>Primary</div>
+            <div>Secondary</div>
+            <div>Accent 1</div>
+            <div>Accent 2</div>
+        </section>
+        <section id="color">
+            <div class="primary">[#B3001B]</div>
+            <div class="secondary">[#262626]</div>
+            <div class="accent1">[#255C99]</div>
+            <div class="accent2">[#CCAD8F]</div>
+        </section>
+        <section>
+            <h3>Typography</h3>
+            <span>Primary:</span>
+            <a href="https://fonts.googleapis.com">https://fonts.googleapis.com</a>
+            <span>Secondary:</span>
+            <a href="https://fonts.gstatic.com">https://fonts.gstatic.com</a>
+
+            <h4>Example 1</h4>
+            <p id="exampleOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iure aliquam sunt dolorem, culpa voluptate
+                molestiae aliquid ad. Odio culpa laborum ex praesentium iusto rem libero quis modi cum at?</p>
+            <h4>Example 2</h4>
+            <p id="exampleTwo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fugit temporibus voluptatum, distinctio laudantium pariatur, ullam voluptas illum quasi quod doloribus quo dolorem nihil, nesciunt aspernatur repudiandae suscipit asperiores molestiae!</p>
+            </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span>
+    </footer>
+
+    <script src="scripts/Principles.js"></script>
 </body>
+
 </html>

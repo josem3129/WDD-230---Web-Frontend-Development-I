@@ -1,0 +1,104 @@
+body{
+    max-width: 750px;
+    margin: 1.25rem auto;
+}
+main{
+    text-align: center;
+}
+#logo{
+    max-width: 50px;
+    justify-self: center;
+    align-self: center;
+}
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+
+}
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+    color: antiquewhite;
+    font-size: 25px;
+}
+nav a:hover {
+	background-color: #708080;
+	color: yellow;
+}
+footer, header{
+    background-color: #255C99;
+    text-align: center;
+    padding: 8px;
+    color: antiquewhite;
+}
+#webInfo{
+    display: flex;
+    flex: 1 1 auto;
+}
+
+header div h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Design page*/
+
+.primary{
+    background-color: #B3001B;
+}
+.secondary{
+    background-color: #262626;
+}
+.accent1{
+    background-color: #255C99
+}
+.accent2{
+    background-color: #CCAD8F;
+}
+.secondary, .primary, .accent1, .accent2, section div{
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 200px;
+}
+#colorName, #color{
+    display: flex;
+    text-align: center;
+}
+.secondary, .primary, .accent1, .accent2{
+    color: antiquewhite;
+}
+#example{
+    font-family: 'Barlow', sans-serif;
+}
+#exampleTwo{
+    font-family: 'Kanit', sans-serif;
+}
+
+/*Target audiance page*/
+
+#target{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.persona{
+    max-height: 200px;
+}
+#personaOne p, #personaTwo p{
+    margin: 0;
+}
+#scenarios{
+    grid-column: span 2;
+    margin-left: auto;
+    margin-right: auto;
+}

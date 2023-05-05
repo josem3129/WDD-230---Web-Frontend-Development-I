@@ -58,3 +58,12 @@ p {
     margin-bottom: 5px;
 }
 
+/*Design page*/
+
+.primary{
+    background-color: #B3001B;
+}
+#colorName, #color{
+    display: flex;
+    flex-direction: column;
+}
