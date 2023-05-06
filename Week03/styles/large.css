@@ -1,0 +1,30 @@
+@media only screen and (min-width: 65em){
+    #color{
+        display: flex;
+        text-align: center;
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 750px;
+    }
+    .secondary, .primary, .accent1, .accent2, section div{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 187px;
+    }
+    /*target audience page*/
+
+    #target{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 20px;
+    }
+    #personaOne, #personaTwo{
+        border-color: white;
+    }
+    #scenarios{
+        grid-column: span 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

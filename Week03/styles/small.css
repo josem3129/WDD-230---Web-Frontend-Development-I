@@ -1,9 +1,19 @@
+/* Main Page */
+
 body{
     max-width: 750px;
     margin: 1.25rem auto;
 }
 main{
     text-align: center;
+}
+#mainLogo{
+    max-height: 300px;
+}
+
+#webDescription{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #logo{
     max-width: 50px;
@@ -40,11 +50,9 @@ footer, header{
     text-align: center;
     padding: 8px;
     color: antiquewhite;
+    font-size: 25px;
 }
-#webInfo{
-    display: flex;
-    flex: 1 1 auto;
-}
+
 
 header div h1{
     margin-left: auto;
@@ -64,16 +72,11 @@ header div h1{
 .accent2{
     background-color: #CCAD8F;
 }
-.secondary, .primary, .accent1, .accent2, section div{
-    margin-left: auto;
-    margin-right: auto;
+
+#color{
     border-style: solid;
-    border-width: 1px;
-    min-width: 200px;
-}
-#colorName, #color{
-    display: flex;
-    text-align: center;
+    border-width: 2px;
+    color: black;
 }
 .secondary, .primary, .accent1, .accent2{
     color: antiquewhite;
@@ -85,20 +88,21 @@ header div h1{
     font-family: 'Kanit', sans-serif;
 }
 
-/*Target audiance page*/
+/*Target audience page*/
 
-#target{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 .persona{
     max-height: 200px;
 }
 #personaOne p, #personaTwo p{
     margin: 0;
+   
 }
-#scenarios{
-    grid-column: span 2;
-    margin-left: auto;
-    margin-right: auto;
+#personaOne, #personaTwo{
+    border-style: solid;
+    padding-bottom: 10px;
+}
+#target{
+    padding-top: 25px;
+    font-size: 35px;
 }
