@@ -21,7 +21,7 @@ main{
     align-self: center;
 }
 nav {
-	background-color: #36454f;
+	background-color: #50514F;
 	text-align: center;
 	box-shadow: 0 0 30px #333;
 	display: flex;
@@ -42,8 +42,8 @@ nav a {
     font-size: 25px;
 }
 nav a:hover {
-	background-color: #708080;
-	color: yellow;
+	background-color: #F25F5C;
+	color: #70C1B3;
 }
 footer, header{
     background-color: #255C99;
