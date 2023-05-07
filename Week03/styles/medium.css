@@ -16,6 +16,7 @@
         margin-left: auto;
         margin-right: auto;
     }
+    
     .secondary, .primary, .accent1, .accent2, section div{
         max-width: 380px;
     }

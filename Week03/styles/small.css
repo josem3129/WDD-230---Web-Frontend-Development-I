@@ -60,6 +60,9 @@ header div h1{
 }
 /*Design page*/
 
+#design{
+    font-size: 25px;
+}
 .primary{
     background-color: #B3001B;
 }
