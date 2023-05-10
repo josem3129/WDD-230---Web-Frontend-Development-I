@@ -1,0 +1,21 @@
+@media only screen and (min-width: 60rem){
+    nav button{
+        display: none;
+    }
+    nav{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        text-align: center;
+    }
+    nav ul#primaryNav {
+        display: flex;
+        
+    }
+    nav ul li a {
+        font-size: 25px;
+        border: none;
+    }
+}

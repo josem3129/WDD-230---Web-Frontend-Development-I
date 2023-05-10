@@ -1,0 +1,16 @@
+@media only screen and (min-width: 35rem){
+    nav{
+        text-align: center;
+    }
+    .facebook,.linkedin {
+        position: absolute;
+        margin-left: auto;
+       
+    }
+    .facebook{
+        left: 41rem;
+    }
+    .linkedin{
+        position: absolute;
+    }
+}

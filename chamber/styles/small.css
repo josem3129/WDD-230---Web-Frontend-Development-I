@@ -1,0 +1,114 @@
+/*Main Website*/
+body{
+    margin: 0;
+}
+header, footer{
+    background-color: #255C99;
+    color: aliceblue;  
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+/*img layouts*/
+
+.logo{
+    max-height: 55px;
+    border-radius: 50%;
+}
+.facebook img, .linkedin img{
+    max-height: 25px;
+    border-radius: 50%;
+}
+
+/*nav layouts*/
+nav button{
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+nav{
+    background-color: #262626;
+    /* margin-left: 20rem;
+    margin-top: -2.5rem;
+    margin-right: 15px; */
+    text-align: left;
+
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.open{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: .8rem 2vw;
+    border-top: 1px solid rgba(171, 152, 152, 0.5);
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+
+/*Header layouts*/
+
+header .logo{
+    float: left;
+    max-width: 45px;
+    margin-left: 5px;
+}
+header{
+    justify-content: right;
+
+}
+
+h1, h2{
+    margin: 0;
+    margin-left: 3.5rem;
+    max-width: 10rem;
+}
+h1{
+    font-size: 23px;
+}
+h2{
+    font-size: 15px;
+}
+.facebook,.linkedin {
+    position: absolute;
+}
+.facebook{
+    left: 16rem;
+    top: 2rem;
+}
+.linkedin{
+    margin-left: 2px;
+    left: 18rem;
+    top: 2rem;
+}
+.dateInfo{
+    text-align: center;
+    background-color: #262626;
+    margin-top: 10px;
+    padding: 5px;
+}
