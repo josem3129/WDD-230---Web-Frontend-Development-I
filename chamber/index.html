@@ -22,16 +22,19 @@
 
 <body>
     <header>
-        <div>
+        <div class="topDiv">
             <a href="index.html"> <img class="logo" src="images/logo.png" alt="logo"></a>
-            <h1>Nampa</h1>
-            <h2>Chamber of Commerce</h2>
+            <div>
+                <h1>Nampa</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
             <a class="facebook" href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
             <a class="linkedin" href="https://www.linkedin.com" target="_blank">
                 <img src="images/LinkedIn.png" alt="linkedin icon">
             </a>
+            <span id="date"></span>
         </div>
         <div class="dateInfo">
             <nav>
@@ -43,21 +46,25 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <!-- <span id="date"> this is a date</span> -->
         </div>
     </header>
     <main></main>
     <footer>
+        <div>
+            <a href="index.html"><img class="footerLogo" src="images/logo.png" alt="logo"></a>
+            <h4>Nampa Chamber of Commerce</h4>
+            <p>1017 19 St nampa, Idaho 83605</p>
+            <a href="#">info@imbuktucc.org</a>
+            <p>+(223) 2070-2300</p>
+            <a class="location" href="https://www.google.com/maps"> <img class="pin" src="images/kisspng-drawing-pin-paper-map-clip-art-pin-5aad8dea6c2685.372388511521323498443.png" alt="pin"> location </a>
 
-        <a class="footerLogo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-        <h4>Nampa Chamber of Commerce</h4>
-        <span>1017 19 St nampa, Idaho 83605</span>
+        </div>
 
         <div>
             &copy;<span id="year"></span>
         </div>
     </footer>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js" defer></script>
 </body>
 
 </html>

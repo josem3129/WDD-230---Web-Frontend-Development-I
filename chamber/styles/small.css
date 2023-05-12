@@ -12,14 +12,18 @@ header, footer{
     padding-right: 0;
     
 }
+.logo, .footerLogo{
+    border-radius: 50%;
+
+}
 /*img layouts*/
 
 .logo{
     max-height: 55px;
-    border-radius: 50%;
 }
+
 .facebook img, .linkedin img{
-    max-height: 25px;
+    max-height: 30px;
     border-radius: 50%;
 }
 
@@ -74,18 +78,12 @@ nav ul li a:hover{
 /*Header layouts*/
 
 header .logo{
-    float: left;
     max-width: 45px;
     margin-left: 5px;
 }
-header{
-    justify-content: right;
-
-}
-
 h1, h2{
     margin: 0;
-    margin-left: 3.5rem;
+    margin-left: .5rem;
     max-width: 10rem;
 }
 h1{
@@ -94,21 +92,51 @@ h1{
 h2{
     font-size: 15px;
 }
-.facebook,.linkedin {
-    position: absolute;
-}
-.facebook{
-    left: 16rem;
-    top: 2rem;
+.facebook,.linkedin,#date {
+    justify-self: right;
 }
 .linkedin{
-    margin-left: 2px;
-    left: 18rem;
-    top: 2rem;
+    margin-left: 3px;
+}
+.facebook{
+    margin-left: 30px;
+
 }
 .dateInfo{
     text-align: center;
     background-color: #262626;
     margin-top: 10px;
     padding: 5px;
+}
+.topDiv{
+    display: flex;
+    flex-direction: row;
+}
+#date{
+    max-width: 55px;
+    margin-left: auto;
+    margin-right: -2px;
+}
+/*Footer*/
+footer div{
+    text-align: center;
+    padding: 5px;
+}
+h4{
+    font-size: 23px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+footer div p{
+    margin-top: 5px;
+}
+footer div a img{
+    max-height: 95px;
+}
+footer div a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.pin{
+    max-width: 35px;
 }

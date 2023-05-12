@@ -2,15 +2,4 @@
     nav{
         text-align: center;
     }
-    .facebook,.linkedin {
-        position: absolute;
-        margin-left: auto;
-       
-    }
-    .facebook{
-        left: 41rem;
-    }
-    .linkedin{
-        position: absolute;
-    }
 }
