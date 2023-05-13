@@ -74,6 +74,7 @@ header div h1{
 }
 .accent2{
     background-color: #CCAD8F;
+    color: #262626;
 }
 
 #color{
@@ -81,14 +82,14 @@ header div h1{
     border-width: 2px;
     color: black;
 }
-.secondary, .primary, .accent1, .accent2{
+.secondary, .primary, .accent1{
     color: antiquewhite;
 }
 #example{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 #exampleTwo{
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 /*Target audience page*/

@@ -10,6 +10,7 @@ header, footer{
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
+    font-family: 'Kanit', sans-serif;
     
 }
 .logo, .footerLogo{
