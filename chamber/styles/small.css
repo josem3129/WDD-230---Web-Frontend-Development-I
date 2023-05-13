@@ -92,15 +92,15 @@ h1{
 h2{
     font-size: 15px;
 }
-.facebook,.linkedin,#date {
-    justify-self: right;
-}
 .linkedin{
     margin-left: 3px;
+    margin-right: 5px;
+    
 }
 .facebook{
-    margin-left: 30px;
-
+    margin-left: auto;
+    margin-right: 5px;
+    
 }
 .dateInfo{
     text-align: center;
@@ -111,13 +111,22 @@ h2{
 .topDiv{
     display: flex;
     flex-direction: row;
+    border-bottom: 2.1px solid rgba(0, 0, 0, .3);
 }
 #date{
     max-width: 55px;
     margin-left: auto;
     margin-right: -2px;
 }
+.dateBar{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
 /*Footer*/
+footer{
+    padding-bottom: 0;
+}
 footer div{
     text-align: center;
     padding: 5px;
@@ -127,7 +136,7 @@ h4{
     margin-top: 1px;
     margin-bottom: 5px;
 }
-footer div p{
+footer div address{
     margin-top: 5px;
 }
 footer div a img{
@@ -139,4 +148,13 @@ footer div a{
 }
 .pin{
     max-width: 35px;
+}
+.info{
+    border-bottom: 1.1px solid rgba(0, 0, 0, .3);
+    padding: 10px;
+}
+.name{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
 }

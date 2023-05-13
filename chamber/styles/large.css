@@ -1,4 +1,5 @@
 @media only screen and (min-width: 60rem){
+    /*navigatio*/
     nav button{
         display: none;
     }
@@ -17,5 +18,35 @@
     nav ul li a {
         font-size: 25px;
         border: none;
+    }
+    /*footer*/
+    footer{
+        padding: 0;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footerImg{
+        margin-right: auto;
+        margin-left: 100px;
+    }
+    footer div.info address{
+        margin-top: 55px;
+        margin-right: auto;
+        margin-left: 200px;
+    }
+    .location{
+        margin-top: auto;
+    }
+    .email{
+        margin-top: 35px;
+    }
+    h4{
+        margin-left: 165px;
+    }
+    footer div a, footer div p,.email{
+        margin-right: 10rem;
+        font-size: 20px;
     }
 }
