@@ -112,3 +112,9 @@ header div h1{
     padding-top: 25px;
     font-size: 35px;
 }
+.target{
+    text-align: center;
+    grid-column: 1/4;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
