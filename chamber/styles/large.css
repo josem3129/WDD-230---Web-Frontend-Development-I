@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60rem){
+@media only screen and (min-width: 66rem){
     /*navigatio*/
     nav button{
         display: none;
@@ -46,7 +46,7 @@
         margin-left: 165px;
     }
     footer div a, footer div p,.email{
-        margin-right: 10rem;
+        margin-right: 20rem;
         font-size: 20px;
     }
 }

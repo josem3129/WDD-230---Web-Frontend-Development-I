@@ -2,6 +2,9 @@
 body{
     margin: 0;
 }
+main{
+    text-align: center;
+}
 header, footer{
     background-color: #255C99;
     color: aliceblue;  
@@ -38,9 +41,6 @@ nav button{
 }
 nav{
     background-color: #262626;
-    /* margin-left: 20rem;
-    margin-top: -2.5rem;
-    margin-right: 15px; */
     text-align: left;
 
 }
@@ -106,8 +106,8 @@ h2{
 .dateInfo{
     text-align: center;
     background-color: #262626;
-    margin-top: 10px;
-    padding: 5px;
+    margin-top:0;
+    padding: 0;
 }
 .topDiv{
     display: flex;
@@ -117,12 +117,14 @@ h2{
 #date{
     max-width: 55px;
     margin-left: auto;
-    margin-right: -2px;
+    margin-right:auto;
+    
 }
 .dateBar{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 0;
+    background-image: linear-gradient(#255C99,#262626);
 }
 /*Footer*/
 footer{
