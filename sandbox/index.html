@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <section id="johny">
         <div>
@@ -18,25 +21,23 @@
         <div id="respond">
 
             <h3>Leave a Comment</h3>
-          
-            <form action="post_comment.php" method="post" id="commentform">
-          
-              <label for="comment_author" class="required">Your name</label>
-              <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
-          
-              <label for="email" class="required">Your email;</label>
-              <input type="email" name="email" id="email" value="" tabindex="2" required="required">
-          
-              <label for="comment" class="required">Your message</label>
-              <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
-          
-              <-- comment_post_ID value hard-coded as 1 -->
-              <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-              <input name="submit" type="submit" value="Submit comment" />
-          
-            </form>
-          
-          </div>
+
+
+
+            <label for="comment_author" >Your name</label>
+            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required" placeholder="name">
+
+            <label for="comment" id="message">Your message</label>
+            <textarea name="comment" id="comment" rows="10" tabindex="4" required="required" placeholder="message"></textarea>
+
+            <button>submit</button><-- Click submit 
+            <ul id="list"></ul>
+
+
+
+        </div>
     </section>
+    <script src="scripts/scripts.js"></script>
 </body>
+
 </html>
