@@ -80,3 +80,4 @@ document.querySelector("#date").innerHTML= ` ${dayName} ${day}, ${monthName} ${y
 
 let text = document.lastModified;
 document.querySelector("#year").innerHTML = `${year}.:|:. Jose Martinez .:|:. Idaho last Updated: ${text}`;
+
