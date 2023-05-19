@@ -215,10 +215,17 @@ section{
     max-height: 45px;
     margin-left: 200px;
     margin-top: 150px;
+    cursor: pointer;
+    box-shadow: 5px 10px 8px #292727;
 }
-#join:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.joinInfo:hover{
+    background-color: rgba(214, 13, 13, 0.3);
+    color: antiquewhite;
+}
+#join:hover{
+    box-shadow: 5px 10px 8px #292727;
     background-color: #262626;
+    cursor: pointer;
 }
 
 .welcome, #join, .hero{
@@ -250,12 +257,11 @@ section{
 
 #spotLight{
     margin-top: 20PX;
-    margin-bottom: 5PX;
+    
 }
-.craft, .employment{
-    background-color: #255C99;
-    margin-top: 5px;
+.craft{
     margin-bottom: 15PX;
+    margin-top: 5px;
 }
 .rootHouse{
     display: none;
@@ -289,3 +295,63 @@ section{
     color: antiquewhite;
 }
 
+/*join section*/
+#joinSection{
+    padding: 3rem;
+}
+#joinSection h3{
+    font-size: 35px;
+    max-width: 385px;
+    margin-top: 0;
+
+}
+.joinInfo{
+    background-color: #B3001B;
+    max-width: 185px;
+    max-height: 85px;
+    border: none;
+    font-size: 35px;
+    padding: 15px;
+    box-shadow: 5px 10px 8px #292727;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#farmerMarket{
+    max-width: fit-content;
+    background-color: #255C99;
+    padding: 20px;
+}
+#farmerMarket img{
+    max-width: 300px;
+}
+#farmerMarket h3{
+    font-size: 35px;
+}
+/*wetaher section*/
+#weather{
+    background-color: #255C99;
+    padding: 30px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#weather div{
+    display: flex;
+    text-align: center;
+    max-width: fit-content;
+}
+
+#weather img{
+    max-width: 100px;
+}
+#weatherDate{
+    margin-top: 15rem;
+}
+
+#weather div span{
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-wrap: wrap;
+}
+#weather h3{
+    font-size: 35px;
+}
