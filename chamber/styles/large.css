@@ -55,6 +55,7 @@
         margin-right: auto;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
+        padding: 2rem;
     }
     /*hearo banner section */
     #heroBaner{
@@ -70,6 +71,7 @@
         padding: 1rem;
         margin: 1rem;
         border-radius: 12px;
+        margin-top: 0%;
     }
     .rootHouse{
         display: block;
@@ -172,6 +174,12 @@
     #joinSection{
         grid-row: 2/3;
         max-height: 150px;
+    }
+    #joinSection h3{
+        font-size: 20px;
+    }
+    .joinInfo{
+        font-size: 20px;
     }
 
 }
