@@ -9,7 +9,7 @@ x.onclick = toggleMenu;
 const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
-const day = date.getDay();
+const day = date.getDay() - 1;
 let dayName = "";
 let monthName;
 
@@ -81,3 +81,9 @@ document.querySelector("#weatherDate").innerHTML= ` ${dayName} ${day}, ${monthNa
 let text = document.lastModified;
 document.querySelector("#year").innerHTML = `${year}.:|:. Jose Martinez .:|:. Idaho last Updated: ${text}`;
 
+if (dayName === "Saturday"){
+    const img = document.querySelector(".hero")
+
+    img.setAttribute("src", "images/DNA-website-slide_depot1.jpg")
+    document.querySelector(".welcome").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+}
