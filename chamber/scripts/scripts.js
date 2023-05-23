@@ -10,6 +10,7 @@ const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
 const day = date.getDay() - 1;
+const numberDay = date.getDate();
 let dayName = "";
 let monthName;
 
@@ -72,10 +73,10 @@ switch(month){
         monthName = "November";
         break;
     case 11:
-        monthName = "Decmeber";
+        monthName = "December";
         break;   
 }
-document.querySelector("#date").innerHTML= ` ${dayName} ${day}, ${monthName} ${year}` ;
+document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
 document.querySelector("#weatherDate").innerHTML= ` ${dayName} ${day}, ${monthName} ${year} - will be with a forecast of idaho spring weather ` ;
 
 let text = document.lastModified;

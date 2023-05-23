@@ -54,7 +54,12 @@
     </header>
     <main>
         <section id="heroBaner">
-            <img class="hero" src="images/city_of_nampa.jpeg" alt="town img">
+            <picture class="hero">
+                <!-- <img class="hero" src="images/city_of_nampa.jpeg" alt="town img"> -->
+                <source class="hero" srcset="images/wdd230-400-org.jpg" media="(min-width:400px) and (max-width: 799px)" >
+                <source class="hero" srcset="images/wdd230-org.jpg" media="(min-width:800px)" >
+                <img class="hero" src="images/wdd230-200-org.jpg" alt="meeting hero">
+            </picture>
             <h1 class="welcome">
                 Welcome to nampa
             </h1>
