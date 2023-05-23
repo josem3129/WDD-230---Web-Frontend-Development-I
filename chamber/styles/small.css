@@ -336,23 +336,27 @@ section{
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
-#weather div{
+#weatherInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#numbers{
+    grid-column: 1/3;
     display: flex;
+    flex-direction: column;
     text-align: center;
-    max-width: fit-content;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+#temp{
+    font-size: 45px;
+    margin: auto 0 auto 0;
 }
 
 #weather img{
-    max-width: 100px;
-}
-#weatherDate{
-    margin-top: 15rem;
-}
-
-#weather div span{
-    margin-top: auto;
-    margin-bottom: auto;
-    flex-wrap: wrap;
+    max-width: 150px;
+    margin-right: 10px;
 }
 #weather h3{
     font-size: 35px;

@@ -56,8 +56,9 @@
         <section id="heroBaner">
             <picture class="hero">
                 <!-- <img class="hero" src="images/city_of_nampa.jpeg" alt="town img"> -->
-                <source class="hero" srcset="images/wdd230-400-org.jpg" media="(min-width:400px) and (max-width: 799px)" >
-                <source class="hero" srcset="images/wdd230-org.jpg" media="(min-width:800px)" >
+                <source class="hero" srcset="images/wdd230-400-org.jpg"
+                    media="(min-width:500px) and (max-width: 1050px)">
+                <source class="hero" srcset="images/wdd230-org.jpg" media="(min-width: 1051px)">
                 <img class="hero" src="images/wdd230-200-org.jpg" alt="meeting hero">
             </picture>
             <h1 class="welcome">
@@ -82,7 +83,8 @@
                 <img src="images/pexels-mikhail-nilov-8923156.jpg" alt="schoolProgram">
                 <a class="email" href="mailto: MentorJan@CraftyMind.com">MentorJan@CraftyMind.com</a>
                 <p>(208) 458-8525</p>
-                <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjTg9Xm2vf-AhWhLzQIHfwPBY4QPAgJ">craftymind.com</a>
+                <a
+                    href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjTg9Xm2vf-AhWhLzQIHfwPBY4QPAgJ">craftymind.com</a>
             </div>
             <div class="employment">
                 <h2>Employment Services</h2>
@@ -114,9 +116,13 @@
         </section>
         <section id="weather">
             <h3>Weather of Nampa</h3>
-            <div>
+            <div id="weatherInfo">
                 <img src="images/clipart30555.png" alt="spring weather">
-                <span id="weatherDate"></span>
+                <span id="temp"></span>
+                <div id="numbers">
+                    <span id="windChill"></span>
+                    <span id="wind"></span>
+                </div>
             </div>
         </section>
     </main>
@@ -137,6 +143,7 @@
         </div>
     </footer>
     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </body>
 
 </html>

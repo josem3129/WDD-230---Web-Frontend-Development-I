@@ -77,7 +77,7 @@ switch(month){
         break;   
 }
 document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
-document.querySelector("#weatherDate").innerHTML= ` ${dayName} ${day}, ${monthName} ${year} - will be with a forecast of idaho spring weather ` ;
+
 
 let text = document.lastModified;
 document.querySelector("#year").innerHTML = `${year}.:|:. Jose Martinez .:|:. Idaho last Updated: ${text}`;
