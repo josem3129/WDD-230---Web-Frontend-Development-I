@@ -8,15 +8,22 @@ button.addEventListener("click", function(){
 
     addedList.textContent = input.value;
     deletButton.textContent = "X";
-    addedList.appendChild(deletButton);
-    list.appendChild(addedList);
-    
-    
-    deletButton.addEventListener("click", function(){
-        addedList.remove()
-    })
-    
-    input.focus()
-    input.value = "";
+
+    if (input.value === ""){
+        alert('error - please add a scripture');
+    }
+    else{
+
+        addedList.appendChild(deletButton);
+        list.appendChild(addedList);
+        
+        
+        deletButton.addEventListener("click", function(){
+            addedList.remove()
+        })
+        
+        input.focus()
+        input.value = "";
+    }
 
 });
