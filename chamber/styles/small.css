@@ -63,6 +63,10 @@ nav ul li a{
     padding: .8rem 2vw;
     border-top: 1px solid rgba(171, 152, 152, 0.5);
 }
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+}
 nav ul li a:hover{
     background-color: rgba(0, 0, 0, .3);
 }
@@ -197,13 +201,13 @@ section{
     grid-column: 1/4;
 }
 .welcome{
-    color: antiquewhite;
-    font-size: 25px;
-    /* font-weight: 900; */
+    color: #CCAD8F;
+    font-size: 35px;
+    font-weight: 900;
     max-width: max-content;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 2px 2px black;
+    text-shadow: 2.5px 2.5px black;
     padding: 2px;
     
 }
@@ -291,11 +295,14 @@ section{
 .craft a, .craft p, .employment a, .employment p{
     margin-bottom: 0;
 }
-
-.email{
+#email{
     text-decoration: none;
     color: antiquewhite;
 }
+.craft a, .employment a, .rootHouse a{
+    color: #B3001B;
+}
+
 
 /*join section*/
 #joinSection{
@@ -328,6 +335,9 @@ section{
 }
 #farmerMarket h3{
     font-size: 35px;
+}
+#farmerMarket p{
+    color: #CCAD8F;
 }
 /*wetaher section*/
 #weather{

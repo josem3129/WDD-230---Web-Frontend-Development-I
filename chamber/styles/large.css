@@ -70,11 +70,6 @@
         margin-top: auto;
         margin-bottom: 2rem;
     }
-    .welcome{
-        color: antiquewhite;
-        font-size: 35px;
-        text-shadow: 2px 2px black;
-    }
     /*spot light*/
     #spotLight{
         grid-column: 3/4;
@@ -133,7 +128,7 @@
         margin: 0%;
         margin-bottom: 10px;
     }
-    .email{
+    #email{
         overflow-wrap: break-word;
     }
     /*event section*/
