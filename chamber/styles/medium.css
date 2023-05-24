@@ -97,7 +97,7 @@
     }
     #event{
         max-width: fit-content;
-        margin-top: 2rem;
+        margin-top: 1rem;
         
     }
     /*spot Light*/
@@ -117,6 +117,7 @@
     #joinSection{
         grid-column: 1/4;
         grid-row: 4/5;
+        font-size: 19px;
     }
     #joinSection h3{
         margin-left: auto;

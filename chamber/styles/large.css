@@ -150,7 +150,7 @@
     /*weather*/
     #weather{
         grid-row: 1/3;
-        margin: auto 0 auto 0;
+        margin: 400px 0 auto 0;
         max-height: 200px;
     }
     #weatherInfo img{
@@ -177,7 +177,7 @@
     }
     #farmerMarket{
         grid-row: 1/2;
-        max-height: 40%;
+        max-height: 51%;
     }
     #farmerMarket h3{
         margin: 0%;
@@ -188,12 +188,12 @@
         max-width: 108px;
     }
     #farmerMarket p{
-        font-size: 15px;
+        font-size: 19px;
     }
     /*#join section*/
     #joinSection{
         grid-row: 1/3;
-        max-height: 400px;
+        max-height: 300px;
         background-color: #255C99;
         border-radius: 12px;
         margin-top: auto;

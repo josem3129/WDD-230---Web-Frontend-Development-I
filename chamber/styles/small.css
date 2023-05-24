@@ -258,6 +258,7 @@ section{
  }
  #event{
     margin-top: 10px;
+    font-size: 20px;
  }
 /*Spot light*/
 
@@ -338,6 +339,7 @@ section{
 }
 #farmerMarket p{
     color: #CCAD8F;
+    font-size: 30px;
 }
 /*wetaher section*/
 #weather{
