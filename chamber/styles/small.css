@@ -296,11 +296,11 @@ section{
 .craft a, .craft p, .employment a, .employment p{
     margin-bottom: 0;
 }
-#email{
+.email{
     text-decoration: none;
     color: antiquewhite;
 }
-.craft a, .employment a, .rootHouse a{
+.pageInfo{
     color: #B3001B;
 }
 
@@ -317,6 +317,7 @@ section{
 }
 .joinInfo{
     background-color: #B3001B;
+    color: whitesmoke;
     max-width: 185px;
     max-height: 85px;
     border: none;
@@ -328,22 +329,22 @@ section{
 }
 #farmerMarket{
     max-width: fit-content;
-    background-color: #255C99;
+    background-color: #7EA3CC;
     padding: 20px;
 }
 #farmerMarket img{
     max-width: 300px;
 }
 #farmerMarket h3{
-    font-size: 35px;
+    font-size: 45px;
 }
 #farmerMarket p{
-    color: #CCAD8F;
+    color: whitesmoke;
     font-size: 30px;
 }
 /*wetaher section*/
 #weather{
-    background-color: #255C99;
+    background-color: #7EA3CC;
     padding: 30px;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
