@@ -45,7 +45,7 @@
     h4{
         margin-left: 165px;
     }
-    footer div a, footer div p,.email{
+    footer div a, footer div p{
         margin-right: 20rem;
         font-size: 20px;
     }
@@ -69,6 +69,9 @@
     #join{
         margin-top: auto;
         margin-bottom: 2rem;
+    }
+    .welcome{
+        font-size: 65px;
     }
     /*spot light*/
     #spotLight{
@@ -96,7 +99,6 @@
     }
     .craft a, .craft p, .employment a, .employment p,.rootHouse a, .rootHouse p{
         margin-bottom: 0%;
-        font-size: 15px;
         text-align: center;
         margin-right: 0;
         
@@ -118,7 +120,7 @@
     }
     .craft, .employment, .rootHouse{
         max-width: 250px;
-        max-height: 240px;
+        max-height: 270px;
         padding: 1rem;
         background-color: #7EA3CC;
         border-radius: 12px;
@@ -130,6 +132,7 @@
     }
     .email{
         overflow-wrap: break-word;
+        font-size: 20px;
     }
     /*event section*/
     #eventSection{
