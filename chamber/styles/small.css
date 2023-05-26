@@ -4,6 +4,7 @@ body{
 }
 main{
     text-align: center;
+    color: whitesmoke;
 }
 header, footer{
     background-color: #255C99;
@@ -285,10 +286,12 @@ section{
     margin-right: auto;
 }
 .employment h2{
-    border-bottom: 3px solid;
     margin-bottom: 10px;
     max-width: 300px;
 }
+.employment h2,.craft h3, .rootHouse h3{
+    border-bottom: 3px solid;
+} 
 .craft h3{
     margin-top: 0;
 }
@@ -299,11 +302,11 @@ section{
 .email{
     text-decoration: none;
     color: antiquewhite;
-    text-shadow: 2.5px 2.5px rgba(0, 0, 0, black);
     font-size: 19px;
 }
 .pageInfo{
     color: #B3001B;
+    text-shadow: 2.5px 2.5px 2.5px black;
     text-decoration: none;
     font-size: 25px;
 }
