@@ -45,10 +45,11 @@
     h4{
         margin-left: 165px;
     }
-    footer div a, footer div p{
+    footer div a, footer div p, .emailFooter{
         margin-right: 20rem;
         font-size: 20px;
     }
+    
     main{
         margin-left: auto;
         margin-right: auto;

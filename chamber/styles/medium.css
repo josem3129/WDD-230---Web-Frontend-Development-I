@@ -31,7 +31,7 @@
     footer div address{
         margin-left: 105px;
     }
-    footer div a, footer div p{
+    footer div a, footer div p, .emailFooter{
         grid-column: 3/4;
         grid-row: 1/2;
         margin-right: auto;
@@ -39,6 +39,9 @@
         padding: 0;
         font-size: 25px;
 
+    }
+    .emailFooter{
+        margin-top: 35px;
     }
     h4{
         margin-left: 55px;
