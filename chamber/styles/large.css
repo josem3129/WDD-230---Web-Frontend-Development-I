@@ -105,7 +105,7 @@
         
     }
     .craft p, .employment p, .rootHouse p{
-        margin-top: 0;
+        margin-top: 10px;
     }
     .craft img, .employment img, .rootHouse img{
         max-width: 10rem;
@@ -134,6 +134,7 @@
     .email{
         overflow-wrap: break-word;
         font-size: 20px;
+        padding: 10px;
     }
     /*event section*/
     #eventSection{
