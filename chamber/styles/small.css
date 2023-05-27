@@ -153,10 +153,11 @@ footer div address{
 footer div a img{
     max-height: 95px;
 }
-footer div a{
+footer div a, .emailFooter{
     text-decoration: none;
     color: antiquewhite;
 }
+
 .pin{
     max-width: 35px;
 }
