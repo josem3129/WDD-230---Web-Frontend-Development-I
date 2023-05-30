@@ -381,3 +381,30 @@ section{
 #weather h3{
     font-size: 35px;
 }
+
+/*Discovery Page*/
+
+#discovery{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#discovery img, #map{
+    max-width: 400px;
+    border-radius: 12px;
+    border: 4px solid #255C99;
+}
+#history h2, #outdoorFun h2, #NampaLocations h2, #demographics h2{
+    font-size: 45px;
+    max-width: 400px;
+    padding: 10px 0 10px 0;
+}
+#history p, #outdoorFun p, #NampaLocations p, #demographics p{
+    margin-bottom: 5rem;
+}
+#demographics{
+    background-color: #CCAD8F;
+    border-top: 4px solid black;
+}
+
