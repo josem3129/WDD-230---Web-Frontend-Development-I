@@ -388,6 +388,7 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0;
 }
 
 #discovery img, #map{
@@ -402,9 +403,41 @@ section{
 }
 #history p, #outdoorFun p, #NampaLocations p, #demographics p{
     margin-bottom: 5rem;
+    font-size: 20px;
+    padding: 8px;
 }
 #demographics{
     background-color: #CCAD8F;
     border-top: 4px solid black;
 }
 
+#history{
+    margin-top: 3rem;
+}
+/*Discover Hero*/
+#discoverNampa{
+    display: grid;
+}
+#dicoverHero img{
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    max-width: 100%;
+
+
+}
+#dicoverHero{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-width: 100%;
+}
+
+#discoverNampa h2{
+    margin: 5rem auto auto auto;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+    font-size: 55px;
+    max-width: 400px;
+
+}
