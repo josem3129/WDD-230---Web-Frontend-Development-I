@@ -218,5 +218,108 @@
         padding: 0;
         margin-bottom: 5px;
     }
-
+    /*Discover*/
+    #discovery h2{
+        padding: 2rem;
+        font-size: 65px;
+    }
+    #history, #outdoorFun, #NampaLocations{
+        margin-top: 10rem;
+    }
+    /*Historic*/
+    #history{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    #history h2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        max-width: 600px;
+    }
+    #HistoricImg{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 2rem;
+    }
+    #history p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #outdoorFun{
+        display: grid;
+    }
+    #outdoorFun h2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #Lake{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 2rem;
+    }
+    #outdoorFun p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    /*Nampa Locations*/
+    #NampaLocations p, #NampaLocations h2{
+        grid-column: 1/4;
+    }
+    #NampaLocations h2{
+        max-width: 600px;
+    }
+    .Belt{
+        display: block;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .train{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .Library{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #NampaLocations .train img, #NampaLocations .Belt img,  #NampaLocations .Library img{
+        max-width: 600px;
+    }
+    #NampaLocations .train, #NampaLocations .Library, #NampaLocations .Belt{
+        max-width: 600px;
+    }
+    #NampaLocations .train{
+        margin-left: 2rem;
+    }
+    #NampaLocations .Library{
+        margin-right: 2rem;
+    }
+    /*Demographics*/
+    #demographics{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    #demographics h2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        max-width: 600px;
+    }
+    #map{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 5rem;
+    }
+    #demographics p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
