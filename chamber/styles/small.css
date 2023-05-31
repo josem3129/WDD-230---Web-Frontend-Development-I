@@ -175,9 +175,7 @@ footer div a, .emailFooter{
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 21rem;
     background-color: #7EA3CC;
-    border-radius: 12px;
 }
 main{
     font-family: 'Barlow', sans-serif;
@@ -221,7 +219,7 @@ section{
     max-width: 150px;
     max-height: 45px;
     margin-left: 200px;
-    margin-top: 150px;
+    margin-top: 300px;
     cursor: pointer;
     box-shadow: 5px 10px 8px #292727;
 }
@@ -314,25 +312,7 @@ section{
 
 /*join section*/
 #joinSection{
-    padding: 3rem;
-}
-#joinSection h3{
-    font-size: 35px;
-    max-width: 385px;
-    margin-top: 0;
-
-}
-.joinInfo{
-    background-color: #B3001B;
-    color: whitesmoke;
-    max-width: 185px;
-    max-height: 85px;
-    border: none;
-    font-size: 35px;
-    padding: 15px;
-    box-shadow: 5px 10px 8px #292727;
-    border-radius: 12px;
-    cursor: pointer;
+    display: none;
 }
 #farmerMarket{
     max-width: fit-content;
@@ -353,8 +333,9 @@ section{
 #weather{
     background-color: #7EA3CC;
     padding: 30px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border: 3px solid black;
+    margin: 1rem;
+    border-radius: 15px;
 }
 #weatherInfo{
     display: grid;
@@ -380,6 +361,7 @@ section{
 }
 #weather h3{
     font-size: 35px;
+    margin-top: 0;
 }
 
 /*Discovery Page*/
@@ -392,10 +374,11 @@ section{
 }
 
 #discovery img, #map{
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 12px;
     border: 4px solid #255C99;
 }
+
 #history h2, #outdoorFun h2, #NampaLocations h2, #demographics h2{
     font-size: 45px;
     max-width: 400px;
@@ -423,8 +406,6 @@ section{
     border-radius: 0;
     margin: 0;
     max-width: 100%;
-
-
 }
 #dicoverHero{
     grid-row: 1/2;
