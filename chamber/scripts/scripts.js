@@ -140,5 +140,3 @@ if(numVisit !== 0){
 numVisit++;
 
 localStorage.setItem("visit-counter", numVisit);
-
-
