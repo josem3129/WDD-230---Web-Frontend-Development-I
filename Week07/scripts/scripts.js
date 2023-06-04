@@ -1,5 +1,3 @@
-
-  
 function loadImages (image) {
     image.setAttribute("src", image.getAttribute("data-src"));
     image.onload = () => {
