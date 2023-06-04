@@ -82,7 +82,7 @@ document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthNam
 let text = document.lastModified;
 document.querySelector("#year").innerHTML = `${year}.:|:. Jose Martinez .:|:. Idaho last Updated: ${text}`;
 
-if (dayName === "Saturday"){
+if (dayName === "Monday"){
     const img = document.querySelector(".hero")
 
     img.setAttribute("src", "images/DNA-website-slide_depot1.jpg")
