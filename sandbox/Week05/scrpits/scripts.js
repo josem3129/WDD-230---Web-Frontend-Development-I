@@ -3,7 +3,6 @@ let itemChecked ="";
 const input = document.querySelector("#favchap");
 const list = document.querySelector("#list");
 const addButton = document.querySelector("#add");
-const saveButton = document.querySelector("#save");
 const loadButton = document.querySelector("#load");
 
 
@@ -91,10 +90,6 @@ function itemLoaded(){
 
 addButton.addEventListener("click", itemAdded);
 
-saveButton.addEventListener("click", function(){
-    
-
-})
 
 loadButton.addEventListener("click", function(){
 
