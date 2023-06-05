@@ -31,7 +31,7 @@ function itemAdded(){
         addedList.appendChild(label)
         list.appendChild(addedList);
         var checkbox = document.getElementById(idName);
-        localStorage.setItem(idName, checkbox.checked);
+        
         
        
         CheckBox.addEventListener("click", function(){
@@ -69,14 +69,16 @@ function itemLoaded(){
         label.appendChild(CheckBox);
         addedList.appendChild(label)
         list.appendChild(addedList);
-        var checkbox = document.getElementById(idName);
-        localStorage.setItem(idName, checkbox.checked);
         
+        var checkbox = document.getElementById(idName);
         if(itemChecked == "false"){ 
             document.getElementById(inputLoaded).checked = false;
-
+            localStorage.setItem(inputLoaded, itemChecked);
+            
         }else{
             document.getElementById(inputLoaded).checked = true;
+            localStorage.setItem(inputLoaded, itemChecked);
+
         }
         CheckBox.addEventListener("click", function(){
         localStorage.setItem(idName, checkbox.checked);
@@ -91,7 +93,8 @@ function itemLoaded(){
 addButton.addEventListener("click", itemAdded);
 
 
-loadButton.addEventListener("click", function(){
+
+function load(){
 
         var archive = {}, // Notice change here
             keys = Object.keys(localStorage),
@@ -118,4 +121,6 @@ loadButton.addEventListener("click", function(){
         
         })
     
-})
+}
+
+load();
