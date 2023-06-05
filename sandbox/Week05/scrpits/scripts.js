@@ -1,15 +1,32 @@
-function load(){    
-    var checked = JSON.parse(localStorage.getItem('checkbox1zaal1'));
-    document.getElementById("checkbox1zaal1").checked = checked;
-}
-const ItemObj = {};
+let inputLoaded = "";
+let itemChecked ="";
 const input = document.querySelector("#favchap");
 const list = document.querySelector("#list");
 const addButton = document.querySelector("#add");
 const saveButton = document.querySelector("#save");
 const loadButton = document.querySelector("#load");
 
-const itemAdded = function(){
+function check(checked = true) {
+    const checkboxes = document.querySelectorAll('input[name="color"]');
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = checked;
+    });
+}
+
+function checkAll() {
+    select();
+    this.onclick = uncheckAll;
+}
+
+function uncheckAll() {
+    select(false);
+    this.onclick = checkAll;
+}
+
+const btn = document.querySelector('#btn');
+btn.onclick = checkAll;
+
+function itemAdded(){
     let addedList = document.createElement("li")
     const CheckBox = document.createElement("input")
     const label = document.createElement("label")
@@ -17,7 +34,7 @@ const itemAdded = function(){
     CheckBox.type = "checkbox"
     CheckBox.name = "ItemList"
     CheckBox.value = input.value;
-    CheckBox.id = input .value;
+    CheckBox.id = input.value;
     
 
     addedList.textContent = input.value;
@@ -29,7 +46,6 @@ const itemAdded = function(){
     else{
         let idName = CheckBox.id
 
-        ItemObj[input]
 
         label.appendChild(CheckBox);
         addedList.appendChild(label)
@@ -37,14 +53,58 @@ const itemAdded = function(){
         var checkbox = document.getElementById(idName);
         localStorage.setItem(idName, checkbox.checked);
         
-        
+       
         CheckBox.addEventListener("click", function(){
-                   
+        localStorage.setItem(idName, checkbox.checked);
+            
             // addedList.remove()
         })
         
         input.focus()
         input.value = "";
+    }
+}
+
+function itemLoaded(){
+    let addedList = document.createElement("li")
+    const CheckBox = document.createElement("input")
+    const label = document.createElement("label")
+
+    CheckBox.type = "checkbox"
+    CheckBox.name = "ItemList"
+    CheckBox.value = inputLoaded;
+    CheckBox.id = inputLoaded;
+    
+
+    addedList.textContent = inputLoaded;
+    CheckBox.textContent = "X";
+
+    if (inputLoaded === ""){
+        alert('error - please add a scripture');
+    }
+    else{
+        let idName = CheckBox.id
+
+
+        label.appendChild(CheckBox);
+        addedList.appendChild(label)
+        list.appendChild(addedList);
+        var checkbox = document.getElementById(idName);
+        localStorage.setItem(idName, checkbox.checked);
+        
+        if(itemChecked == "false"){ 
+            CheckBox.hasAttribute("checked");
+
+        }else{
+            CheckBox.hasAttribute("checked");
+        }
+        CheckBox.addEventListener("click", function(){
+        localStorage.setItem(idName, checkbox.checked);
+            
+            // addedList.remove()
+        })
+        
+        input.focus()
     }
 }
 
@@ -56,16 +116,30 @@ saveButton.addEventListener("click", function(){
 })
 
 loadButton.addEventListener("click", function(){
-      
-    var valueChecked = JSON.parse(localStorage.getItem(-------));     
-    var keyChecked = JSON.parse(localStorage.key());
-    itemAdded()
-    for(let i = 1; i <= valueChecked; i++){
-        if(localStorage.length > 0){
-          var checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
-          document.getElementById(String(i)).checked = checked;
-        }
-      }
-      window.addEventListener('change', save);
 
+        var archive = {}, // Notice change here
+            keys = Object.keys(localStorage),
+            i = keys.length;
+    
+        while ( i-- ) {
+            archive[ keys[i] ] = localStorage.getItem( keys[i] );
+        }
+        
+        let item = Object.keys(archive)
+        item.forEach((item) => {
+        itemChecked = archive[item];
+        inputLoaded = item;
+        
+        if (inputLoaded == "visit-counter"){
+            
+        }else{
+            
+            
+            console.log(itemChecked); 
+            console.log(inputLoaded); 
+            itemLoaded();
+        }
+        
+        })
+    
 })
