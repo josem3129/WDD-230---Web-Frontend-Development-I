@@ -10,6 +10,8 @@ function itemAdded(){
     let addedList = document.createElement("li")
     const CheckBox = document.createElement("input")
     const label = document.createElement("label")
+    const deletButton = document.createElement("button")
+
 
     CheckBox.type = "checkbox"
     CheckBox.name = "ItemList"
@@ -28,6 +30,7 @@ function itemAdded(){
 
 
         label.appendChild(CheckBox);
+        addedList.appendChild(deletButton);
         addedList.appendChild(label)
         list.appendChild(addedList);
         var checkbox = document.getElementById(idName);
@@ -39,6 +42,9 @@ function itemAdded(){
             
             // addedList.remove()
         })
+        deletButton.addEventListener("click", function(){
+            addedList.remove()
+        })
         
         input.focus()
         input.value = "";
@@ -49,6 +55,8 @@ function itemLoaded(){
     let addedList = document.createElement("li")
     const CheckBox = document.createElement("input")
     const label = document.createElement("label")
+    const deletButton = document.createElement("button")
+
 
     CheckBox.type = "checkbox"
     CheckBox.name = "ItemList"
@@ -67,6 +75,7 @@ function itemLoaded(){
 
 
         label.appendChild(CheckBox);
+        addedList.appendChild(deletButton);
         addedList.appendChild(label)
         list.appendChild(addedList);
         
@@ -84,6 +93,10 @@ function itemLoaded(){
         localStorage.setItem(idName, checkbox.checked);
             
             // addedList.remove()
+        })
+        deletButton.addEventListener("click", function(){
+            const d = document.getElementById()
+            addedList.remove()
         })
         
         input.focus()
@@ -109,7 +122,7 @@ function load(){
         itemChecked = archive[item];
         inputLoaded = item;
         
-        if (inputLoaded == "visit-counter"){
+        if (inputLoaded == "visit-counter" || inputLoaded =="visitcounte"){
             
         }else{
             
