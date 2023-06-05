@@ -6,25 +6,6 @@ const addButton = document.querySelector("#add");
 const saveButton = document.querySelector("#save");
 const loadButton = document.querySelector("#load");
 
-function check(checked = true) {
-    const checkboxes = document.querySelectorAll('input[name="color"]');
-    checkboxes.forEach((checkbox) => {
-        checkbox.checked = checked;
-    });
-}
-
-function checkAll() {
-    select();
-    this.onclick = uncheckAll;
-}
-
-function uncheckAll() {
-    select(false);
-    this.onclick = checkAll;
-}
-
-const btn = document.querySelector('#btn');
-btn.onclick = checkAll;
 
 function itemAdded(){
     let addedList = document.createElement("li")
@@ -93,10 +74,10 @@ function itemLoaded(){
         localStorage.setItem(idName, checkbox.checked);
         
         if(itemChecked == "false"){ 
-            CheckBox.hasAttribute("checked");
+            document.getElementById(inputLoaded).checked = false;
 
         }else{
-            CheckBox.hasAttribute("checked");
+            document.getElementById(inputLoaded).checked = true;
         }
         CheckBox.addEventListener("click", function(){
         localStorage.setItem(idName, checkbox.checked);
