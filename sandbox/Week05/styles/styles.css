@@ -4,7 +4,7 @@
 }
 
 body {
-	height: 100vh;
+	height: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,16 +13,17 @@ body {
 }
 
 h1 {
-	font-size: 1.5rem;
+	font-size: 3rem;
 }
 
 main {
-	margin: 1rem auto;
+	margin: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 	background-color: #ddd;
 	display: flex;
 	flex-direction: column;
+	font-size: 35px;
 }
 
 input,
@@ -56,6 +57,9 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+lable{
+	text-align: center;
 }
 
 @media only screen and (min-width: 32.5em) {
