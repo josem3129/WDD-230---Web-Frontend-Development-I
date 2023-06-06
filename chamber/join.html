@@ -56,44 +56,31 @@
         </div>
     </header>
     <main id="joinMain">
-        <h1>Course Proposal Application</h1>
-        <form method="get" action="thanks.html">
+        <h1 id="joinHeader">Commerce Join Application</h1>
+        <form method="get" action="thankyou.html" id="joinForm">
             <fieldset>
                 <legend>applicant information </legend>
-                <label class="top"> First Name* <input type="text" name="fname" required></label>
-                <label class="top"> First Name* <input type="text" name="fname" required></label>
-                <label class="top"> Phone <input type="tel" name="phone" placeholder="(XXX) XXX-XXXX"></label>
-                <label class="top"> Email* <input type="email" name="email" required></label>
-                <label class="top"> Website <input type="url" name="url" placeholder="https://"></label>
+                <label class="top"> First Name* <input type="text" name="fname"  required></label>
+                <label class="top"> First Name* <input type="text" name="fname"  required></label>
+                <label class="top"> Business Name <input type="text" name="Business" required></label>
+                <label class="top"> Business Position <input id="title" type="text" name="title" placeholder="title" required><span id="output"></span></label>
+                <label class="top"> Email* <input type="email" name="email"  placeholder="Example@email.com" required></label>
+                <label class="top"> Phone <input type="tel" name="phone" required></label>
             </fieldset>
             <fieldset>
                 <legend>Cors information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advance"> Advance</label>
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+                <div>Commerce Membership </div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner">  NP Membership - Free</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate">  Bronze Membership - $50</label>
+                <label class="sbs"><input type="radio" name="audience" value="advance">  Silver Membership - $100</label>
+                <label class="sbs"><input type="radio" name="audience" value="advance">  Gold Membership - $150</label>
             </fieldset>
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated completed date <input type="date" name="completedDate"></label>
-                <label class="top">Corse Subject
-                    <select name="subject" id="">
-                        <option value="">Please Select &#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="creative">Creative</option>
-                        <option value="info">Info</option>
-                        <option value="data">Data</option>
-                        <option value="construction">Construction</option>
-                    </select>
-                </label>
-                <label class="top">How Many Others<input type="date" name="authors"></label>
+            <fieldset class="formPart">
+                <legend> Business Description </legend>
+                <label> Describe Your Type of Business<textarea name="description" id="description" rows="10" tabindex="4" placeholder="message"></textarea></label>
+                <span id="dateFormed"></span>               
             </fieldset>
-            <input type="submit" value="Propose My Corse" class="submitBtn">
+            <input type="submit" value="Join Commerce" class="submitBtn">
         </form>
     </main>
     <footer>
@@ -112,6 +99,7 @@
             &copy;<span id="year"></span>
         </div>
     </footer>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
 </body>

@@ -77,6 +77,7 @@ switch(month){
         break;   
 }
 document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
+document.querySelector("#dateFormed").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
 
 
 let text = document.lastModified;

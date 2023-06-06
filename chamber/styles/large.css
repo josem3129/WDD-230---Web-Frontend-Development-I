@@ -329,4 +329,23 @@
         margin-top: auto;
         margin-bottom: auto;
     }
+    /*----join page-----*/
+    form{
+        border: 2px solid  #255C99;
+        border-radius: 12px;
+        width: 800px;
+        align-self: center;
+    }
+    #joinHeader{
+        font-size: 55px;
+    }
+    #description{
+        max-width: none;
+
+    }
+    form input.submitBtn{
+        margin: 0 0 2rem 6%;
+        width: 96%;
+        max-width: 20rem;
+    }
 }

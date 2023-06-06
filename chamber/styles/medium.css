@@ -247,4 +247,33 @@
     #dicoverHero{
         max-width: 100%;
     }
+    /*---join----*/
+    #joinMain{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        padding: 3rem;
+    }
+    .formPart{
+        display: flex;
+    }
+    form fieldset{
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    #joinHeader{
+        font-size: 45px;
+    }
+    form input.submitBtn{
+        max-width: none;
+        margin: 0 0 2rem 2%;
+        font-size: 1.5rem;
+    }
+    form label.top, form div{
+    font-size: 1.5rem;
+    }
+    #description{
+        max-width: none;
+    }
 }
