@@ -276,4 +276,54 @@
     #description{
         max-width: none;
     }
+    /*---table----*/
+table {
+    display: block;
+    margin: 0 auto 0 0;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+  
+  td, th{
+    border: 1px solid rgb(0, 0, .02);
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: darkslategrey;
+    padding: 22.3px;
+    color: white;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgb(206, 204, 204);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }
+  
+  caption {
+    padding: 10px;
+  }
+  body{
+    text-align: center;
+  }
+  #empty{
+    background-color: darkslategrey;
+    margin-top: 0;
+    padding: 0;
+    max-height: 100px;
+  }
+  .check{
+    color: blue;
+  }
+  .notcheck{
+    color: red;
+  }
 }

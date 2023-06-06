@@ -517,6 +517,9 @@ form label.top input:required:valid{
     padding-bottom: 5rem;
     font-size: 45px;
 }
+table{
+    display: none;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
