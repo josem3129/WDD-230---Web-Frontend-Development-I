@@ -1,0 +1,84 @@
+{
+    "companies":[
+        {
+            "name":"Bubble Boutique",
+            "address":"2389 Elkview Drive Nampa, ID 83686",
+            "email":"Bubble.Boutique@gmail.com",
+            "businessUrl":"bubbleboutique.me",
+            "url":"",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Paper Paradise",
+            "address":"3486 Fantages Way Nampa, ID 83686",
+            "email":"paperparadise@hotmail.com",
+            "businessUrl":"paperparadise.io",
+            "url":"",
+            "membershipLevel":"Silver"
+        },
+        {
+            "name":"Fresh Fiesta",
+            "address":"601 Saint Marys Avenue Nampa, ID 83686",
+            "email":"Fresh@gmail.com",
+            "businessUrl":"freshfiesta.info",
+            "url":"",
+            "membershipLevel":"NP"
+        },
+        {
+            "name":"Retro Realm",
+            "address":"2672 Main Street Nampa, ID 83651",
+            "email":"retrorealm@yahoo.com",
+            "businessUrl":"retroreal.com",
+            "url":"",
+            "membershipLevel":"Bronze"
+        },
+        {
+            "name":"Green Glow",
+            "address":"2869 Young Road Nampa, ID 83651",
+            "email":"greenglow@gmail.com",
+            "businessUrl":"greengrow.com",
+            "url":"",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Materne North America",
+            "address":"3724 Tree Top Lane Nampa, ID 83686",
+            "email":"materne@groupe-bel.com",
+            "businessUrl":"gogosqueez.com",
+            "url":"",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Holy Cow Idaho!",
+            "address":"1226 1st St S, Nampa, ID 83651",
+            "email":"holycowidaho@gmail.com",
+            "businessUrl":"holycowidaho.com",
+            "url":"",
+            "membershipLevel":"Silver"
+        },
+        {
+            "name":"Idaho Women's Business Center",
+            "address":"270 W Georgia Ave, Nampa, ID 83686",
+            "email":"idahowomen@gmail.com",
+            "businessUrl":"idahowomen.org",
+            "url":"",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"A-1 Chem Dry",
+            "address":"909 3rd St S Nampa, ID 83651",
+            "email":null,
+            "businessUrl":"healthycleancarpet.com",
+            "url":"",
+            "membershipLevel":"NP"
+        },
+        {
+            "name":"First Class Cleaning",
+            "address":"3394 S McDermott Rd, Nampa, ID 83687",
+            "email":"OFFICE@FIRSTCLASSCLEANINGLLC.COM",
+            "businessUrl":"firstclasscleaningllc.com",
+            "url":"",
+            "membershipLevel":"Gold"
+        }
+    ]
+}
