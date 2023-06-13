@@ -83,26 +83,47 @@ function reset(){
     document.querySelector('.cards').innerHTML = ' ';
 }
 
-function sortBy(e) {
+function sortBy() {
    
-    reset();
-    
-    // if (e.target.value === 'prophetsServedDecade') {
-      
+    reset();      
         prophets.prophets.forEach(data =>{
 
             if(data.length >= 10){
                 displayProphet(data)
             }
         })
-
-
-  
-    // }else if (e.target.value === 'allProphets') {
-    //     prophets.prophets.forEach(data =>
-    //         displayProphet(data));
-    // };
-    
 };
-//step 9    
-document.querySelector("#sortBy").addEventListener('click', sortBy);
+
+
+function noFilter(){
+    reset();
+    prophets.prophets.forEach(data =>{
+
+            displayProphet(data)
+        
+    })
+}
+document.querySelector("#sortBy").addEventListener('click', noFilter);
+document.querySelector("#sortByFilter").addEventListener('click', sortBy);
+document.querySelector("#sortByIdaho").addEventListener('click', function sorting() {
+   
+    reset();      
+        prophets.prophets.forEach(data =>{
+
+            if(data.birthplace == 'Idaho'){
+                displayProphet(data)
+            }
+        })
+});
+document.querySelector("#sortByUath").addEventListener('click', function sorting() {
+   
+    reset();      
+        prophets.prophets.forEach(data =>{
+
+            if(data.birthplace == 'Utah'){
+                displayProphet(data)
+            }
+        })
+});
+
+
