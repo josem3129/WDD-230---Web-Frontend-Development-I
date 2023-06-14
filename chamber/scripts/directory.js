@@ -55,7 +55,7 @@ function displayProphet(companies){
     //     h2.textContent = `${companies.name} ${companies.lastname} - ${companies.order}th`;
     // }
 
-    card.setAttribute('class', 'companyCards')
+    // card.setAttribute('class', 'companyCards')
 
     h2.textContent = `${companies.name}`
     h3.textContent = `${companies.address}`
@@ -89,7 +89,7 @@ const display = document.querySelector("article");
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("grid");
+	display.classList.add("cards");
 	display.classList.remove("list");
 });
 
@@ -97,5 +97,5 @@ listbutton.addEventListener("click", showList); // example using defined functio
 
 function showList() {
 	display.classList.add("list");
-	display.classList.remove("grid");
+	display.classList.remove("cards");
 }
