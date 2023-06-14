@@ -65,11 +65,11 @@ function displayProphet(companies){
     img.setAttribute('src', companies.url);
     img.setAttribute('alt', `Portrait of ${companies.name}`)
     img.setAttribute('loading', 'lazy');
-    img.setAttribute('width', '340');
-    img.setAttribute('height', '440');
+    // img.setAttribute('width', '340');
+    // img.setAttribute('height', '440');
 
-    card.appendChild(img);
     card.appendChild(h2);
+    card.appendChild(img);
     card.appendChild(h3);
     card.appendChild(h4);
     card.appendChild(h5);
@@ -78,3 +78,24 @@ function displayProphet(companies){
     
 }
 getProphetData()
+
+
+//grid or list
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
