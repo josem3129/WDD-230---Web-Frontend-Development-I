@@ -15,7 +15,7 @@ function displayProphet(companies){
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let h3 = document.createElement('h3');
-    let h4 = document.createElement('h4')
+    let link = document.createElement('a')
     let h5 = document.createElement('h5')
     let img = document.createElement('img');
     // let pBYear = companies.birthdate;
@@ -59,7 +59,8 @@ function displayProphet(companies){
 
     h2.textContent = `${companies.name}`
     h3.textContent = `${companies.address}`
-    h4.textContent = `${companies.businessUrl}`;
+    link.textContent = `${companies.businessUrl}`;
+    link.setAttribute('href', companies.url)
     h5.textContent = `Email: ${companies.email}`;
 
     img.setAttribute('src', companies.url);
@@ -71,8 +72,8 @@ function displayProphet(companies){
     card.appendChild(h2);
     card.appendChild(img);
     card.appendChild(h3);
-    card.appendChild(h4);
     card.appendChild(h5);
+    card.appendChild(link);
 
     cards.appendChild(card);
     

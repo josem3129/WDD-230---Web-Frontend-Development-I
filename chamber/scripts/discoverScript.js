@@ -24,18 +24,27 @@ if ("IntersectionObserver" in window) {
 } else {
     images.forEach(loadImages);
 }
- //local storage 
- 
+ //local storage //
  const countDisplay = document.querySelector("#visitedCount");
+ const localDate = new Date().getTime();
+
+function dateCal(){
+    const pastDateStamp = window.localStorage.getItem('visitedCount')
+
+    const lastVisted = 1000 *new Date(pastDateStamp).getTime() * localDate * 24
+
+    countDisplay.textContent = `Number of Days last visited: ${lastVisted}`;
+}
+
  
  let numVisit = Number(window.localStorage.getItem("visit-counter"));
  
  if(numVisit !== 0){
-     countDisplay.textContent = `Number of visits: ${numVisit}`;
+    dateCal();
  }else{
      countDisplay.textContent = "This is your first time visiting!"
  }
  
  numVisit++;
  
- localStorage.setItem("visit-counter", numVisit);
+ localStorage.setItem("visit-counter",JSON.stringify(localDate));
