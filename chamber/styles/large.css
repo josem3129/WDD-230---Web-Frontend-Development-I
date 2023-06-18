@@ -282,29 +282,25 @@
     #NampaLocations h2{
         max-width: 600px;
     }
-    .Belt{
+    #NampaLocations{
         display: block;
-        grid-column: 2/3;
-        grid-row: 2/3;
     }
-    .train{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .Library{
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
+    
     #NampaLocations .train img, #NampaLocations .Belt img,  #NampaLocations .Library img{
         max-width: 430px;
     }
-    #NampaLocations .train{
-        margin-left: auto;
-        max-width: 450px;
+    #NampaLocations .train p, #NampaLocations .Belt p,  #NampaLocations .Library p{
+        margin-top: 10rem;
+        margin-bottom: 20rem;
+    }
+
+
+    #NampaLocations .train img,  #NampaLocations .Belt img{
+        float: left;
 
     }
-    #NampaLocations .Library{
-        margin-right: auto;
+    #NampaLocations .Library img{
+        float: right;
     }
     /*Demographics*/
     #demographics{
@@ -346,5 +342,40 @@
         margin: 0 0 2rem 6%;
         width: 96%;
         max-width: 20rem;
+    }
+    /*directory*/
+    .cards{
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1150px;
+    }
+    .cards section{
+        margin: 5px;
+    }
+
+    .list section, .list .heading{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list .heading .email{
+        display: block;
+        margin-left: 0;
+    }
+    .email, .name,.address,.website{
+        font-size: 35px;
+        max-width: fit-content;
+        padding: 0;
+
+    }
+    .list section h5{
+        grid-column: 3/4;
+    }
+    .list section a, .list .url{
+        color: black;
+        text-align: left;
+    }
+    .list section{
+        padding: 10px;
     }
 }

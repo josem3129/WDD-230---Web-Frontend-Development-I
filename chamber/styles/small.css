@@ -529,9 +529,6 @@ table{
     display: flex;
     flex-direction: column;
 }
-#directoryMain h2{
-    margin: 2px auto 2px auto;
-}
 .cards section {
     border: 2px solid black;
     border-radius: 12px;
@@ -540,6 +537,8 @@ table{
     width: 100%;
     max-width: 300px;
     text-align: center;
+    padding: 5px;
+
 }
 .cards section img{
     border-radius: 12px;
@@ -547,11 +546,7 @@ table{
     max-width: 250px;
 }
 .cards section h2{
-    font-size: 25px;
-    margin-bottom: 0;
-    text-align: center;
-    max-width: 100%;
-    padding: 5px;
+    display: none;
 }
 .cards section h3,.cards section h4{
     margin-bottom: 0;
@@ -562,12 +557,15 @@ table{
     font-size: 15px;
     padding: 5px;
 }
-.cards{
+.cards section a{
+    text-decoration: none;
+    color: black;
     
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
 }
 
+.cards section h5 {
+    margin: 0;
+}
 .cards .heading{
     display: none;
 }
@@ -582,17 +580,20 @@ table{
 }
 
 .list section {
-    display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+	/* grid-template-columns: 1fr 1fr 1fr; */
 	margin: 0;
 	padding: 0.25rem;
 }
 .list section a, .list .url{
-    margin: 2px;
+    /* margin: 2px; */
     width: 140px;
     max-width: 100%;
     text-align: center;
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
+    color: slateblue;
 }
 
 .list section > * {
@@ -603,8 +604,16 @@ table{
     display: none; /* smaller viewports only */
 }
 
-.list section h3 {
+.list section h3, .list section h2, .list section a {
     font-size: 15px;
+    margin: 0;
+    max-width: fit-content;
+}
+.list section a{
+    padding-bottom: 4px;
+}
+.list section h2{
+    padding-top: 4px;
 }
 
 .list section:nth-child(even) {
@@ -617,6 +626,9 @@ table{
 }
 
 .list .heading .email, .list section h5{
+    display: none;
+}
+.list .heading{
     display: none;
 }
 /*directory button*/
