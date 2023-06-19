@@ -159,7 +159,7 @@
         max-height: 200px;
     }
     #weatherInfo img{
-        max-width: 5rem;
+        width: 80%;
         grid-column: 1/2;
        /* margin: 3px auto 0 0; */
     }
@@ -169,11 +169,15 @@
     }
     #numbers{
         flex-direction: column;
-        grid-row: 2/3;
-        padding-top: 15px;
+        font-size: 20px;
         margin-top: 5px;
         border-top: 1px solid black;
     }
+    figcaption{
+        border-bottom: none;
+        margin: 0;
+    }
+    
     #temp{
         font-size: 35px;
         grid-column: 2/3;
