@@ -29,11 +29,13 @@ if ("IntersectionObserver" in window) {
  const localDate = new Date().getTime();
 
 function dateCal(){
-    const pastDateStamp = window.localStorage.getItem('visit-counter')
+    const pastDateStamp = window.localStorage.getItem('visit-counter');
+    const saveDate = new Date(parseInt(pastDateStamp)).getDate();
+    const currentDate = new Date(localDate).getDate();
 
-    const lastVisted = 1000 *new Date(pastDateStamp).getTime() * localDate * 24
+    const lastVisted =  saveDate - currentDate; 
 
-    countDisplay.textContent = `Number of Days last visited: ${lastVisted}`;
+    countDisplay.textContent = `Number of Days last visited: ${Math.round(lastVisted)}`;
 }
 
  
