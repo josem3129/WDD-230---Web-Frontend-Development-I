@@ -283,7 +283,7 @@
         max-width: 600px;
     }
     #NampaLocations{
-        display: block;
+        display: grid;
     }
     
     #NampaLocations .train img, #NampaLocations .Belt img,  #NampaLocations .Library img{
@@ -292,16 +292,9 @@
     #NampaLocations .train p, #NampaLocations .Belt p,  #NampaLocations .Library p{
         margin-top: 10rem;
         margin-bottom: 20rem;
+        max-width: 400px;
     }
 
-
-    #NampaLocations .train img,  #NampaLocations .Belt img{
-        float: left;
-
-    }
-    #NampaLocations .Library img{
-        float: right;
-    }
     /*Demographics*/
     #demographics{
         display: grid;
@@ -378,4 +371,5 @@
     .list section{
         padding: 10px;
     }
+  
 }

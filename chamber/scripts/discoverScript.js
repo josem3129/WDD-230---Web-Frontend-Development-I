@@ -29,7 +29,7 @@ if ("IntersectionObserver" in window) {
  const localDate = new Date().getTime();
 
 function dateCal(){
-    const pastDateStamp = window.localStorage.getItem('visitedCount')
+    const pastDateStamp = window.localStorage.getItem('visit-counter')
 
     const lastVisted = 1000 *new Date(pastDateStamp).getTime() * localDate * 24
 
