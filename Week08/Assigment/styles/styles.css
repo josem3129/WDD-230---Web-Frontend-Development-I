@@ -10,8 +10,8 @@ html {
     font-size: 2rem;
   }
   
-  td, th, h1{
-    border: 1px solid darkslategrey;
+  td, th, thead, .fill{
+    border: 1px solid black;
     padding: 10px 20px;
   }
   
@@ -38,18 +38,23 @@ html {
   body{
     text-align: center;
   }
-  h1{
+  /* thead tr th{
     font-size: 45px;
     background-color: darkslategrey;
     max-width: 657.24px;
     margin: 0 auto 0 auto;
     padding: 5px;
+  } */
+
+  tr:first-child th {
+    background-color: darkslategrey;
   }
-  #empty{
+  tr #empty{
     background-color: darkslategrey;
     margin-top: 0;
     padding: 0;
     max-height: 100px;
+    border-top: none
   }
   .check{
     color: blue;
@@ -57,3 +62,4 @@ html {
   .notcheck{
     color: red;
   }
+  

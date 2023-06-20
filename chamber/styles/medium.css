@@ -114,8 +114,19 @@
     .craft, .employment{
         max-height: 350px;
         max-width: 385px;
-        margin: 10px 0 5px 5px;
-
+        border: 2px solid #292727;
+        border-radius: 12px;
+        margin-top: 2rem;
+    }
+    .employment{
+        margin-left: auto;
+    }
+    .craft{
+        margin: 2rem 0 0 auto;
+    }
+    .craft h2{
+        margin-top: 5rem;
+        margin-bottom: auto;
     }
     /*join section*/
 
