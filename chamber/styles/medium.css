@@ -349,6 +349,7 @@ table {
     margin-top: 0;
     padding: 0;
     max-height: 100px;
+    text-align: center;
   }
   .check{
     color: blue;
