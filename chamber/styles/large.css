@@ -302,6 +302,7 @@
     }
     #NampaLocations h2{
         max-width: 600px;
+        grid-column: 1/3;
     }
     #NampaLocations .train img, #NampaLocations .Belt img,  #NampaLocations .Library img{
         max-width: 430px;
