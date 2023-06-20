@@ -91,12 +91,16 @@
         display: block;
         margin-top: 2rem;
         margin-left: 5px;
+        border: 2px solid black;
     }
     .employment{
         margin-top: 2rem;
     }
     .craft{
         margin-top: 1rem;
+    }
+    .craft h2{
+        margin-top: 0;
     }
     .craft a, .craft p, .employment a, .employment p,.rootHouse a, .rootHouse p{
         margin-bottom: 0%;
@@ -141,7 +145,10 @@
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    
+    #event{
+        width: 1180px;
+        max-width: 100%;
+    }
     /*left side of screen*/
     #joinSection, #farmerMarket, #weather{
         border: 2px solid black;
@@ -155,7 +162,7 @@
     /*weather*/
     #weather{
         grid-row: 1/3;
-        margin: 405px 0 auto 0;
+        margin: 387px 0 auto 0;
         max-height: 200px;
     }
     #weatherInfo img{

@@ -180,7 +180,6 @@ footer div a, .emailFooter{
 main{
     font-family: 'Barlow', sans-serif;
     background-color: #839D9A;
-
 }
 
 /*Hero banner*/
@@ -245,7 +244,7 @@ section{
  }
  .parkName{
     font-size: 35px;
-    max-width: 190px;
+    max-width: fit-content;
  }
  .parkType{
     margin-top: -5px;

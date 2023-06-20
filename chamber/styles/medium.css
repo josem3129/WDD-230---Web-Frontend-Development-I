@@ -70,7 +70,10 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, auto);
     }
-
+    #homeMain a:hover{
+        font-size: 30px;
+        color: red;    
+    }
     #eventSection, #spotLight, #joinSection{
         margin-bottom: 30px;
     }
@@ -120,6 +123,9 @@
     }
     .employment{
         margin-left: auto;
+    }
+    .employment a{
+        font-size: 20px;
     }
     .craft{
         margin: 2rem 0 0 auto;
