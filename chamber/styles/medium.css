@@ -352,9 +352,12 @@ table {
   }
   .check{
     color: blue;
+    font-size: 35px;
   }
   .notcheck{
     color: red;
+    font-size: 35px;
+
   }
   /*directory*/
   .cards{
