@@ -435,7 +435,7 @@ figcaption{
     text-align: left;
 }
 form{
-    background-color: #CCAD8F;
+    background-color: #7EA3CC;
     padding: .5rem;
 }
 #joinHeader{
@@ -449,7 +449,7 @@ form{
 form fieldset{
     border-radius: 10px;
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid black;
     padding: .5rem 2%;
 }
 form legend{
@@ -508,10 +508,6 @@ form label.top input:required:valid{
 #output{
     display: none;
 }
-#dateFormed{
-    display: none;
-}
-
 /*thank you page*/
 #thankMain{
     display: block;
