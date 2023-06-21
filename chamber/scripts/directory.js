@@ -16,7 +16,7 @@ function displayProphet(companies){
     let h2 = document.createElement('h2');
     let h3 = document.createElement('h3');
     let link = document.createElement('a')
-    let h5 = document.createElement('h5')
+    let h4 = document.createElement('h4')
     let img = document.createElement('img');
     // let pBYear = companies.birthdate;
     // let pDYear = companies.death;
@@ -61,7 +61,7 @@ function displayProphet(companies){
     h3.textContent = `${companies.address}`
     link.textContent = `${companies.businessUrl}`;
     link.setAttribute('href', companies.url)
-    h5.textContent = `Email: ${companies.email}`;
+    h4.textContent = `Email: ${companies.email}`;
 
     img.setAttribute('src', companies.url);
     img.setAttribute('alt', `Portrait of ${companies.name}`)
@@ -72,7 +72,7 @@ function displayProphet(companies){
     card.appendChild(h2);
     card.appendChild(img);
     card.appendChild(h3);
-    card.appendChild(h5);
+    card.appendChild(h4);
     card.appendChild(link);
 
     cards.appendChild(card);

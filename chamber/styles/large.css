@@ -370,6 +370,7 @@
         margin-right: auto;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1150px;
+        font-size: 25px;
     }
     .cards section{
         margin: 5px;
@@ -389,7 +390,7 @@
         padding: 1rem;
 
     }
-    .list section h5{
+    .list section h4{
         grid-column: 3/4;
     }
     .list section a, .list .url{

@@ -365,7 +365,7 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .list section h5{
+  .list section h4{
     display: flex;
     margin: 0;
     font-size: 15px;
