@@ -541,6 +541,7 @@ table{
     max-width: 300px;
     text-align: center;
     padding: 5px;
+    color: white;
 
 }
 .cards section img{
@@ -555,14 +556,14 @@ table{
     margin: 0;
     
 }
-.cards section h3,.cards section h4,.cards section h4{
+.cards section h3,.cards section h4{
     margin-top: 0;
     font-size: 15px;
     padding: 5px;
 }
 .cards section a{
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
