@@ -1,8 +1,8 @@
 body{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-}
-section {
+  }
+  section {
     border: 2px solid black;
     border-radius: 12px;
     margin: 1rem auto 1rem auto;
@@ -18,19 +18,21 @@ img{
 h2{
     font-size: 35px;
     margin-bottom: 0;
-}
+  }
 h3,h4{
     margin-bottom: 0;
-
-}
+    
+  }
 h3,h4,h5{
     margin-top: 0;
     font-size: 19px;
     padding: 5px;
 }
 .cards{
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
 }
 
 /* CSS */
