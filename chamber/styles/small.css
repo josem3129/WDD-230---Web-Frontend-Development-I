@@ -301,7 +301,6 @@ section{
 
 .craft a, .craft p, .employment a, .rootHouse a{
     margin-bottom: 0;
-    text-decoration: none;
     color: black;
 }
 .email{
@@ -312,7 +311,6 @@ section{
 }
 .pageInfo, .moreInfo{
     color: black;
-    text-decoration: none;
     font-size: 25px;
 }
 
@@ -570,7 +568,6 @@ table{
     padding: 5px;
 }
 .cards section a{
-    text-decoration: none;
     color: white;
     
 }
@@ -621,7 +618,6 @@ table{
 }
 .list section a{
     padding-bottom: 4px;
-    text-decoration: none;
     color: black;
 }
 .list section h2{
