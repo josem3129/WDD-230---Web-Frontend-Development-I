@@ -709,3 +709,86 @@ table{
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
+/*contact info*/
+#contactMain{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    width: 100%;
+}
+#contactMain img{
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.director{
+    padding: 2rem;
+    grid-row: 3/4;
+    border-top: 2px solid black;
+}
+.director h2{
+    margin: 5px auto 0 auto;
+    font-size: 20px;
+}
+.contactInfo{
+    grid-row: 1/2;
+    padding: 2rem;
+    border-bottom: 2px solid black;
+}
+#contactMain a{
+    text-decoration: none;
+    color: black;
+}
+#contactMain a:hover{
+    color: #9c2c13;
+
+}
+.contactInfo h3{
+    font-size: 40px;
+    margin: 0;
+}
+.contactInfo h4{
+    margin-top: 1rem;
+}
+.contactInfo p{
+    margin: 0;
+}
+/*COntact Form*/
+.contactForm legend{
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+.contactForm label{
+    text-align: left;
+}
+.submitBtnCOntact{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: .5rem;
+}
+
+.submitBtnCOntact:hover{
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
