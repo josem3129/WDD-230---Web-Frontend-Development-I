@@ -187,7 +187,7 @@
     }
     #farmerMarket{
         grid-row: 1/2;
-        max-height: 51%;
+        max-height: 46%;
     }
     #farmerMarket h3{
         margin: 0%;
@@ -195,10 +195,10 @@
         margin-bottom: 5px;
     }
     #farmerMarket img{
-        max-width: 108px;
+        max-width: 100px;
     }
     #farmerMarket p{
-        font-size: 18px;
+        font-size: 16px;
         margin: 0;
     }
     /*#join section*/
