@@ -98,6 +98,7 @@
     }
     .craft{
         margin-top: 1rem;
+        min-height: 200px;
     }
     .craft h2{
         margin-top: 0;
@@ -110,7 +111,6 @@
         border-radius: 12px;
         margin-bottom: auto;
         margin-top: auto;
-        border: 2px solid black;
     }
     .craft h2, .employment h2, .rootHouse h2{
         font-size: 25px;
@@ -398,5 +398,28 @@
         font-size: 25px;
         padding: 0;
         text-align: left;
+    }
+    /*contact page*/
+    .director, .contactInfo{
+        grid-column: 1/2;
+    }
+    .contactForm{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    }
+    .contactInfo{
+    grid-row: 2/4;
+    border-top: 2px solid black;
+    border-bottom: none;
+    }
+    .contactInfo h4{
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .director{
+    grid-row: 1/3;
+    border-top: none;
+    border-bottom: 2px solid black;
+    border-bottom: none;
     }
 }
