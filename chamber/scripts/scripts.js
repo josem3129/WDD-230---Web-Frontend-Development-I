@@ -92,4 +92,3 @@ document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthNam
 document.querySelector("#dateFormed").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
 
 
-

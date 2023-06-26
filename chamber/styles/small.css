@@ -275,12 +275,18 @@ section{
     max-width: 15rem;
     border-radius: 12px;
     margin-bottom: 13px;
-    border: 2px solid black;
 }
 .craft h2, .employment h2{
     font-size: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+.craft h4, .rootHouse h4{
+    font-size: 20px;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 0;
+
 }
 .employment h2{
     margin-bottom: 10px;
@@ -293,8 +299,10 @@ section{
     margin-top: 0;
 }
 
-.craft a, .craft p, .employment a, .employment p{
+.craft a, .craft p, .employment a, .rootHouse a{
     margin-bottom: 0;
+    text-decoration: none;
+    color: black;
 }
 .email{
     text-decoration: none;

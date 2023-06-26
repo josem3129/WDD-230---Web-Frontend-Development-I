@@ -43,19 +43,19 @@ function displayResults(weatherData){
       
       const modValue = 
       document.querySelector("#windChill").innerHTML= `Wind chill: ${Math.round(f * 10) / 10}`;
-      document.querySelector("#temp").innerHTML= `${t} \u00B0C`;
+      document.querySelector("#temp").innerHTML= `${t} \u00B0F`;
       document.querySelector("#wind").innerHTML= `Wind speed: ${s} km/h`;
       
   }
   else if (t >= 50){
       document.querySelector("#windChill").innerHTML= `Wind chill: N/A`;
-      document.querySelector("#temp").innerHTML= `${t} \u00B0C`;
+      document.querySelector("#temp").innerHTML= `${t} \u00B0F`;
       document.querySelector("#wind").innerHTML= `Wind speed: ${s} km/h`;
   
   }
   else if (s <= 3){
-      document.querySelector("#windChill").innerHTML= `Wind chill: ${Math.round(f * 10) / 10}`;
-      document.querySelector("#temp").innerHTML= `${t} \u00B0C`;
+      document.querySelector("#windFhill").innerHTML= `Wind chill: ${Math.round(f * 10) / 10}`;
+      document.querySelector("#temp").innerHTML= `${t} \u00B0F`;
       document.querySelector("#wind").innerHTML= `Wind speed: N/A`;
   
   }

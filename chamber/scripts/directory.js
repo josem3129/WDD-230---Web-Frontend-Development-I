@@ -18,44 +18,7 @@ function displayProphet(companies){
     let link = document.createElement('a')
     let h4 = document.createElement('h4')
     let img = document.createElement('img');
-    // let pBYear = companies.birthdate;
-    // let pDYear = companies.death;
-    // let bSplit = '';
-    // let byear = '';
-    // let dSplit = '';
-    // let dyear = '';
-    // if (companies.lastname == 'Nelson'){
-    //     // birth year 
-    //         bSplit = pBYear.split(' ');
-    //         byear = bSplit[2]
-        
-    //     const date = new Date();
-    //     // death year
-    //         dyear = date.getFullYear();
-    // }else{
-    //         // birth year 
-    //         bSplit = pBYear.split(' ');
-    //         byear = bSplit[2]
-            
-    
-    //         // death year
-    //         dSplit = pDYear.split(' ');
-    //         dyear = dSplit[2]
-    // }
 
-    // if(companies.name == 'Joseph'){
-    //     h2.textContent = `${companies.name} ${companies.lastname} - ${companies.order}st`;
-
-    // }else if (companies.name == 'Brigham'){
-    //     h2.textContent = `${companies.name} ${companies.lastname} - ${companies.order}nd`;
-                    
-    // }else if(companies.name == 'John'){
-    //     h2.textContent = `${companies.name} ${companies.lastname} - ${companies.order}rd`;
-    // }else{
-    //     h2.textContent = `${companies.name} ${companies.lastname} - ${companies.order}th`;
-    // }
-
-    // card.setAttribute('class', 'companyCards')
 
     h2.textContent = `${companies.name}`
     h3.textContent = `${companies.address}`
