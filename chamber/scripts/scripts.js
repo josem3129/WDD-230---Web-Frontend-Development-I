@@ -88,7 +88,7 @@ document.querySelector("#year").innerHTML = `${year}.:|:. Jose Martinez .:|:. Id
 //     document.querySelector(".welcome").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
 // }
 
-document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
-document.querySelector("#dateFormed").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
+document.querySelector("#date").innerHTML= `${dayName} ${numberDay}, ${monthName} ${year}`;
+document.querySelector("#dateFormed").innerHTML= `${dayName} ${numberDay}, ${monthName} ${year}`;
 
 
