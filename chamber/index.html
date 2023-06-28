@@ -66,7 +66,7 @@
             <h2 class="welcome">
                 Welcome to nampa
             </h2>
-            <button id="join">Join the chamber</button>
+            <button id="join" onclick="window.location.href='join.html'">Join the chamber</button>
         </section>
         <section id="eventSection">
             <div id="event">
@@ -78,14 +78,14 @@
         </section>
         <section id="joinSection">
             <h3>Discover what Nampa has to offer</h3>
-            <button class="joinInfo">Join Us</button>
+            <button class="joinInfo"  onclick="window.location.href='discover.html'">Discover</button>
         </section>
         <section id="weather">
             <h3>Weather of Nampa</h3>
             <div id="weatherInfo">
-                <img src="" alt="spring weather" id="weather-icon" loading="lazy">
+                <img src="images/city_of_nampa.webp" alt="" id="weather-icon" loading="lazy">
                 <span id="temp"></span>
-                <figcaption></figcaption>
+                <div class="weatherTitle"></div>
                 <div id="numbers">
                     <span id="windChill"></span>
                     <span id="wind"></span>
@@ -97,7 +97,7 @@
             <img src="images/clipart235913.png" alt="market" loading="lazy">
             <p>The Nampa Farmers Market is proud to announce that we have been voted one of the very best Farmers markets in the United States! The Farmers Market Coalition, a part of American Farmland</p>
         </section>
-        <section id="spotLight"></section>
+        <div id="spotLight"></div>
     </main>
     <footer>
         <div class="info">

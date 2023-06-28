@@ -1,7 +1,7 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('.weatherTitle');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Nampa&units=imperial&APPID=3147dd21956cbdef375e52cb5ed3e014'
 

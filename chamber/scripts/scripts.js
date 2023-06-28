@@ -81,12 +81,12 @@ switch(month){
 let text = document.lastModified;
 document.querySelector("#year").innerHTML = `${year}.:|:. Jose Martinez .:|:. Idaho last Updated: ${text}`;
 
-if (dayName == "Monday"){
-    const img = document.querySelectorAll(".hero")
+// if (dayName == "Monday"){
+//     const img = document.querySelectorAll(".hero")
     
-    // img.setAttribute("src", "images/DNA-website-slide_depot1.jpg")
-    document.querySelector(".welcome").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
-}
+//     // img.setAttribute("src", "images/DNA-website-slide_depot1.jpg")
+//     document.querySelector(".welcome").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+// }
 
 document.querySelector("#date").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
 document.querySelector("#dateFormed").innerHTML= ` ${dayName} ${numberDay}, ${monthName} ${year}` ;
