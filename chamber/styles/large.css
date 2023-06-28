@@ -152,6 +152,7 @@
         border: 2px solid black;
         grid-column: 1/2;
         max-width: 250px;
+        height: auto;
         padding: 25px;
         margin-right: 0;
         margin-right: 16px;
@@ -159,7 +160,7 @@
     /*weather*/
     #weather{
         grid-row: 1/2;
-        margin-top: 409px;
+        margin-top: 417px;
         max-height: 200px;
     }
     #weatherInfo img{
@@ -190,7 +191,7 @@
     }
     #farmerMarket{
         grid-row: 1/2;
-        max-height: 51%;
+        max-height: 340px;
         margin-left: 0;
     }
     #farmerMarket h3{
