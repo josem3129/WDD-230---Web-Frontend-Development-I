@@ -276,10 +276,11 @@ section{
     border-radius: 12px;
     margin-bottom: 13px;
 }
-.craft h2, .employment h2{
+.craft h2, .rootHouse h2{
     font-size: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
 }
 .craft h4, .rootHouse h4{
     font-size: 15px;

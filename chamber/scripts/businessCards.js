@@ -38,7 +38,7 @@ function displayBusiness(data){
             let img = document.createElement('img');
         
         
-            // h2.textContent = `${spotlight[j][0].name}`
+            h2.textContent = `${spotlight[j][0].name}`
             h3.textContent = `${spotlight[j][0].address}`
             link.textContent = `${spotlight[j][0].businessUrl}`;
             link.setAttribute('href', spotlight[j][0].url)
@@ -69,7 +69,7 @@ function displayBusiness(data){
             let img = document.createElement('img');
         
         
-            // h2.textContent = `${spotlight[j][0].name}`
+            h2.textContent = `${spotlight[j][0].name}`
             h3.textContent = `${spotlight[j][0].address}`
             link.textContent = `${spotlight[j][0].businessUrl}`;
             link.setAttribute('href', spotlight[j][0].url)
