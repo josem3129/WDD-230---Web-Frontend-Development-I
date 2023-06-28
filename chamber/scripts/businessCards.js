@@ -79,6 +79,7 @@ function displayBusiness(data){
             img.setAttribute('alt', `Portrait of ${spotlight[j][0].name}`)
             img.setAttribute('loading', 'lazy');
             card.setAttribute('class', 'rootHouse');
+      
         
             card.appendChild(h2);
             card.appendChild(img);

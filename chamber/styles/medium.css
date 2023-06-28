@@ -144,12 +144,6 @@
         padding: 3rem;
         display: block;
     }
-    #joinSection h3{
-        font-size: 35px;
-        max-width: 385px;
-        margin-top: 0;
-    
-    }
     .joinInfo{
         background-color: #B3001B;
         color: whitesmoke;
@@ -167,11 +161,12 @@
         grid-row: 4/5;
         font-size: 19px;
     }
-    #joinSection h3{
+    #joinSection h2{
         margin-left: auto;
         margin-right: auto;
         max-width: fit-content;
         font-size: 3rem;
+        margin-bottom: 1rem;
     }
     .joinInfo{
         font-size: 5rem;
@@ -188,13 +183,14 @@
     }
     /*weather*/
     #weather{
-        grid-column: 3/4;
+        grid-column: 2/4;
         grid-row: 5/6;
-        max-width: 200px;
-        margin: 0 10px 0 0;
+        width: 100%;
+        max-width: 230px;
+        margin: 0 10px 0 auto;
         border: none;
     }
-    #weather h3{
+    #weather h2{
         font-size: 40px;
 
     }

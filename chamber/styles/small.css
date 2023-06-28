@@ -327,8 +327,12 @@ section{
 #farmerMarket img{
     max-width: 300px;
 }
-#farmerMarket h3{
-    font-size: 45px;
+#farmerMarket h2{
+    font-size: 35px;
+    width: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 #farmerMarket p{
     color: black;
@@ -372,11 +376,18 @@ figcaption{
     width: 80%;
     margin-right: 10px;
 }
-#weather h3{
+#weather h2{
     font-size: 25px;
     margin-top: 0;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.weatherTitle{
+    border-bottom: 2px solid black;
+    grid-column: 1/3;
+    font-size: 25px;
+}
 /*Discovery Page*/
 
 #discovery{
