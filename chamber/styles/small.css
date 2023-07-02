@@ -456,6 +456,10 @@ form{
     background-color: #7EA3CC;
     padding: .5rem;
 }
+.formPart{
+    display: flex;
+    flex-direction: column;
+}
 #joinHeader{
     margin-left: auto;
     margin-right: auto;
@@ -807,3 +811,4 @@ table{
   background-position: 0 0;
   color: #FF4742;
 }
+
