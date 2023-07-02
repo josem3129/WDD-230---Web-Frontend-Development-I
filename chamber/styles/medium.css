@@ -285,7 +285,9 @@
     form{
         padding: 3rem;
     }
-    
+    .formPart{
+        display: flex;
+    }
     form fieldset{
         border-radius: 10px;
         font-size: 25px;
