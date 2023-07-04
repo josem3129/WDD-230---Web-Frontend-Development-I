@@ -1,0 +1,122 @@
+/* Main Page */
+
+body{
+    max-width: 950px;
+    margin: 1.25rem auto;
+}
+main{
+    text-align: center;
+}
+#mainLogo{
+    max-height: 300px;
+    margin: 1rem;
+}
+
+#webDescription{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#logo{
+    max-width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+nav {
+	background-color: #50514F;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+
+}
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+    color: antiquewhite;
+    font-size: 25px;
+}
+nav a:hover {
+	background-color: #F25F5C;
+	color: #70C1B3;
+}
+footer, header{
+    background-color: #255C99;
+    text-align: center;
+    padding: 8px;
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+
+header div h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Design page*/
+
+#design{
+    font-size: 25px;
+}
+.primary{
+    background-color: #D10406;
+}
+.secondary{
+    background-color: #710803;
+}
+.accent1{
+    background-color: #255C99
+}
+.accent2{
+    background-color: #919C19;
+    color: #262626;
+    font-weight: 900;
+}
+
+#color{
+    border-style: solid;
+    border-width: 2;
+    color: black;
+}
+.secondary, .primary, .accent1{
+    color: antiquewhite;
+    font-weight: 900;
+}
+#example{
+    font-family: 'Hind', sans-serif;
+}
+#exampleTwo{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+/*Target audience page*/
+
+
+.persona{
+    max-height: 200px;
+}
+#personaOne p, #personaTwo p{
+    margin: 0;
+   
+}
+#personaOne, #personaTwo{
+    border-style: solid;
+    padding-bottom: 10px;
+}
+#target{
+    padding-top: 25px;
+    font-size: 35px;
+}
+.target{
+    text-align: center;
+    grid-column: 1/4;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
