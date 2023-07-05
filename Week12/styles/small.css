@@ -2,19 +2,19 @@
 
 body{
     max-width: 950px;
-    margin: 1.25rem auto;
+    margin: 0 auto 0 auto;
 }
 main{
     text-align: center;
 }
 #mainLogo{
     max-height: 300px;
-    margin: 1rem;
+    margin: 1rem 0 1rem 0;
 }
 
 #webDescription{
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 1rem;
 }
 #logo{
     max-width: 100px;
@@ -22,7 +22,7 @@ main{
     align-self: center;
 }
 nav {
-	background-color: #50514F;
+	background-color: #A6D3A0;
 	text-align: center;
 	box-shadow: 0 0 30px #333;
 	display: flex;
@@ -39,19 +39,22 @@ nav a {
 	padding: 15px;
 	text-decoration: none;
 	font-size: 0.9rem;
-    color: antiquewhite;
+    color: black;
     font-size: 25px;
 }
 nav a:hover {
-	background-color: #F25F5C;
-	color: #70C1B3;
+	background-color: #656565;
+	color: whitesmoke;
+}
+nav .active{
+    background-color: rgba(0, 0, 0, .2);
 }
 footer, header{
-    background-color: #255C99;
+    background-color: #0E3B43;
     text-align: center;
     padding: 8px;
     color: antiquewhite;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 
@@ -65,28 +68,29 @@ header div h1{
     font-size: 25px;
 }
 .primary{
-    background-color: #D10406;
+    background-color: #F10303;
 }
 .secondary{
-    background-color: #710803;
+    background-color: #FDC43C;
+    color: black;
 }
 .accent1{
-    background-color: #255C99
-}
-.accent2{
-    background-color: #919C19;
-    color: #262626;
-    font-weight: 900;
+    background-color: #6C3E1C
 }
 
 #color{
     border-style: solid;
     border-width: 2;
-    color: black;
 }
-.secondary, .primary, .accent1{
+.primary, .accent1{
     color: antiquewhite;
     font-weight: 900;
+}
+.secondary, .primary, .accent1{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 5px;
+
 }
 #example{
     font-family: 'Hind', sans-serif;
@@ -119,4 +123,14 @@ header div h1{
     grid-column: 1/4;
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
+}
+/*wireframe page*/
+#wireframeMain{
+    max-width: 350px;
+    margin: 1rem auto 0 auto;
+}
+#wireframeMain img{
+    max-width: 300px;
+}
+#wireframeMain div{
 }
