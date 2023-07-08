@@ -1,0 +1,146 @@
+/*Footer and Header*/
+body{
+    margin: 0;
+}
+
+.logo{
+    max-width: 175px;
+}
+.headerDiv{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto 0 35px;
+}
+header{
+    grid-template-columns: 60px 180px 85px;
+    border-top: 5px solid #fdc43c;
+    border-bottom: 10px solid #F10303;
+}
+header, footer{
+    display: grid;
+    background-color: #262626;
+
+}
+.media{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.media a{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.facebook{
+    border-radius: 15px;
+    max-width: 30px;
+    margin-bottom: 2px;
+}
+.instagram, .youtube{
+    border-radius: 15px;
+    max-width: 35px;
+}
+/*nav layouts*/
+nav{
+    background-color: #262626;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: auto 0 auto 0;
+    height: 100%;
+    width: 0;
+   
+    transition: 0.5s;
+    padding-top: 60px;
+}
+nav.open{
+    width: 100%;
+    max-width: fit-content;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #262626;
+}
+nav ul.open{
+    display: block;
+}
+nav ul li a{
+    color: antiquewhite;
+    padding: .8rem 2vw;
+    padding: 20px 15px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    background-color: #262626;
+
+}
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+    margin: .5rem;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+
+}
+/*footer*/
+footer{
+    color: white;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    border-top: 10px solid #F10303;
+}
+footer .media{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin: 0 auto 0 auto;
+}
+.footerImg{
+    width: 100%;
+    max-width: fit-content;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto 0 auto;
+}
+.footerLogo{
+    max-width: 200px;
+}
+.name{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.compInfo{
+    margin: 150px auto 1rem auto;
+    color: white;
+    font-size: 15px;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
