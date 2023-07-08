@@ -1,6 +1,7 @@
 /*Footer and Header*/
 body{
     margin: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .logo{
@@ -21,6 +22,7 @@ header{
 header, footer{
     display: grid;
     background-color: #262626;
+    font-family: 'Hind', sans-serif;
 
 }
 .media{
@@ -49,13 +51,12 @@ nav{
     grid-row: 1/2;
     grid-column: 1/2;
     margin: auto 0 auto 0;
-    height: 100%;
-    width: 0;
-   
+    /* width: 0; */
     transition: 0.5s;
-    padding-top: 60px;
 }
 nav.open{
+    padding-top: 60px;
+    height: 100%;
     width: 100%;
     max-width: fit-content;
     position: fixed;
@@ -81,7 +82,6 @@ nav ul.open{
 }
 nav ul li a{
     color: antiquewhite;
-    padding: .8rem 2vw;
     padding: 20px 15px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -136,6 +136,8 @@ footer .media{
 .name{
     grid-row: 4/5;
     grid-column: 1/2;
+    border-top: 1px solid white;
+    padding: 1rem;
 }
 .compInfo{
     margin: 150px auto 1rem auto;
@@ -143,4 +145,13 @@ footer .media{
     font-size: 15px;
     grid-row: 1/3;
     grid-column: 1/2;
+}
+.compInfo h4{
+    margin-bottom: 5px;
+}
+.compInfo address{
+    margin: .5rem;
+}
+.compInfo a{
+    color: white;
 }
