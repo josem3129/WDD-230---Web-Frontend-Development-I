@@ -5,7 +5,7 @@ body{
 }
 
 .logo{
-    max-width: 175px;
+    max-width: 120px;
 }
 .headerDiv{
     grid-column: 2/4;
@@ -229,6 +229,7 @@ div .hero{
     width: 100%;
     max-width: 340px;
     padding: 1rem;
+    border-radius: 26px;
 }
 .coastalArea button, .hero button{
   align-items: center;
@@ -303,6 +304,7 @@ div .hero{
     background-color: #262626;
     color: white;
     padding: 1rem;
+    text-align: center;
 }
 #numbers{
     display: flex;
@@ -314,8 +316,10 @@ div .hero{
 .weatherTitle{
     margin-top: 6px;
 }
-#weatherInfo img{
-    margin: 0 auto 0 auto;
+#weatherInfo img, #forecastCards img{
+    /* margin: 0 auto 0 auto; */
+    align-self: center;
+    width: 100%;
 }
 #forecastCards{
     margin-top: 1rem;
@@ -329,6 +333,10 @@ div .hero{
     margin-top: 0;
 }
 #forecastCards section h3{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+#forecastCards section h2{
     margin-bottom: 0;
 }
 /*recipe cards*/

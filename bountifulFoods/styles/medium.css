@@ -32,4 +32,54 @@
     .name{
         grid-column: 1/4;
     }
+    /*main page*/
+    .hero h2{
+        font-size: 40px;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .coastalArea img{
+        max-width: 500px;
+    }
+    .coastalArea p{
+        font-size: 30px;
+    }
+    .coastalArea button{
+        font-size: 36px;
+        padding: 1rem;
+    }
+    .weatherCards{
+        width: 100%;
+        display: grid;
+    }
+    #weatherInfo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 35px;
+    }
+    #forecastCards{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    #forecastCards h2{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        margin-bottom: 1rem;
+    }
+    #forecastCards section{
+        /* min-width: 200px; */
+        width: 100%;
+        margin: 0 auto 0 auto;
+        border-left: 2px solid rgba(0, 0, 0, .3);
+        border-right: 2px solid rgba(0, 0, 0, .3);
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    
 }
