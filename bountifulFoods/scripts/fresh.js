@@ -93,34 +93,74 @@ function load(){
       if (recipes.hasOwnProperty(key)) {
         console.log(`${key}: ${recipes[key]}`);
         
-        const carbohydrates = 0;
-        const protein = 0;
-        const fat = 0;
-        const sugar = 0;
-        const calories = 0;
-        const section = document.createElement('section');
-        const h2 = document.createElement('h2');
-        const ul =  document.createElement('ul');
-        const li =  document.createElement('li');
-        const h3 =  document.createElement('h3');
+        let carbohydrates = 0;
+        let protein = 0;
+        let fat = 0;
+        let sugar = 0;
+        let calories = 0;
+        let section = document.createElement('section');
+        let h2 = document.createElement('h2');
+        let ul =  document.createElement('ul');
+        let li =  document.createElement('li');
+        let h3 =  document.createElement('h3');
+        let ulTwo = document.createElement('ul');
+        let liCarbohydrates =  document.createElement('li');
+        let liProtein =  document.createElement('li');
+        let liFat =  document.createElement('li');
+        let liSugar =  document.createElement('li');
+        let liCalories =  document.createElement('li');
 
+        h2.textContent = key;
+        h3.textContent = 'Nutritional Facts'
+        liCalories.innerHTML = calories;
+        liCarbohydrates.innerHTML = carbohydrates;
+        liFat.innerHTML = fat;
+        liProtein.innerHTML = protein;
+        liSugar.innerHTML = sugar;
 
+        fieldset.appendChild(section);
+        section.appendChild(h2);
+        
+        
 
         let storageFruit = recipes[key].split(',');
         storageFruit.forEach(element =>{
-          
-          fruits.forEach(fruit => {
+            
+            fruits.forEach(fruit => {
             let option = fruit.name;
-  
+            
             if(option == element){
+                let nutritions = fruit.nutritions;
               console.log(option);
+              li.textContent = element;
+              ul.appendChild(li);
+
+              calories = calories + nutritions.calories;
+              carbohydrates = carbohydrates + nutritions.carbohydrates;
+              fat = fat + nutritions.fat;
+              protein = protein + nutritions.protein;
+              sugar = sugar + nutritions.sugar;
+
 
               
 
             }
-          });
-        })
+            section.appendChild(ul);
+            section.appendChild(h3);
+            ulTwo.appendChild(liCalories);
+            ulTwo.appendChild(liCarbohydrates);
+            ulTwo.appendChild(liFat);
+            ulTwo.appendChild(liProtein);
+            ulTwo.appendChild(liProtein);
+            ulTwo.appendChild(liSugar);
+            section.appendChild(ulTwo);
+        });
 
+
+        
+
+    })
+    
 
 
       }
