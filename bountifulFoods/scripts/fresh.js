@@ -122,6 +122,7 @@ function load(){
         section.appendChild(h2);
         
         
+        
 
         let storageFruit = recipes[key].split(',');
         storageFruit.forEach(element =>{
