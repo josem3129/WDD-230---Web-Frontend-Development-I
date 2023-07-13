@@ -48,24 +48,20 @@
         </div>
     </header>
     <main>
-        <h1 id="joinHeader">Commerce Join Application</h1>
-        <form method="get" action="thankyou.html" id="joinForm">
+        <h1 id="joinHeader">Make a smoothy</h1>
+        <form id="joinForm">
             <fieldset>
-                <legend>applicant information </legend>
-                <label class="top"> First Name* <input type="text" name="fname"  required></label>
+                <legend>Smoothy </legend>
+                <!-- <label class="top"> First Name* <input type="text" name="fname"  required></label>
                 <label class="top"> Email* <input type="email" name="email"  placeholder="Example@email.com" required></label>
-                <label class="top"> Phone <input type="tel" name="phone" required></label>
+                <label class="top"> Phone <input type="tel" name="phone" required></label> -->
             </fieldset>
             <fieldset id="selectFruit">
                 
             </fieldset>
-            <fieldset class="formPart">
-                <legend> Business Description </legend>
-                <label> Describe Your Type of Business:<textarea name="description" id="description" rows="10" placeholder="message"></textarea></label>
-                <input type="hidden" id="dateFormed">            
-            </fieldset>
-            <input type="submit" value="Join Commerce" class="submitBtn">
         </form>
+        <button id="submitBtn">Save Recipe</button>
+        <div id="recipes"></div>
     </main>
     <footer>
         <a class="footerImg" href="index.html"><img class="footerLogo" src="images/Bauntiful_logo.webp" alt="logo"></a>
@@ -93,7 +89,7 @@
             &copy;<span id="year"></span>
         </div>
     </footer>
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/fresh.js"></script>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/fresh.js" defer></script>
 </body>
 </html>
