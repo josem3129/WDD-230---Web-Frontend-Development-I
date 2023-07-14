@@ -1,5 +1,6 @@
 const urlFresh = 'https://brotherblazzard.github.io/canvas-content/fruit.json'
 const fieldset = document.querySelector('#selectFruit');
+let section = document.createElement('section');
 let fruits = [];
 let i = 0;
 let recipeNum = 0;
@@ -47,7 +48,14 @@ function smoothyCal(data){
 
 document.getElementById('submitBtn').addEventListener("click", () => {
 
-  recipeNum++;
+  for (const key in recipes) {
+    if (recipes.hasOwnProperty(key)) {
+
+      recipeNum++;
+    }}
+
+    recipeNum++;
+  
   const storageName = 'recipe';
   const valueOne = document.querySelector('#fruit0').value;
   const valueTwo = document.querySelector('#fruit1').value;
@@ -63,7 +71,8 @@ document.getElementById('submitBtn').addEventListener("click", () => {
     recipes[`recipe${recipeNum}`] = `${valueOne},${valueTwo},${valueThree}`;
     localStorage.setItem(storageName, JSON.stringify(recipes))
   }
-
+  recipeNum = 0;
+  section.innerHTML = "";
   load();
 
 });
@@ -98,7 +107,6 @@ function load(){
         let fat = 0;
         let sugar = 0;
         let calories = 0;
-        let section = document.createElement('section');
         let h2 = document.createElement('h2');
         let ul =  document.createElement('ul');
         let li =  document.createElement('li');
@@ -110,19 +118,12 @@ function load(){
         let liSugar =  document.createElement('li');
         let liCalories =  document.createElement('li');
 
-        h2.textContent = key;
-        h3.textContent = 'Nutritional Facts'
-        liCalories.innerHTML = calories;
-        liCarbohydrates.innerHTML = carbohydrates;
-        liFat.innerHTML = fat;
-        liProtein.innerHTML = protein;
-        liSugar.innerHTML = sugar;
-
+        
         fieldset.appendChild(section);
         section.appendChild(h2);
         
         
-        
+            
 
         let storageFruit = recipes[key].split(',');
         storageFruit.forEach(element =>{
@@ -141,11 +142,16 @@ function load(){
               fat = fat + nutritions.fat;
               protein = protein + nutritions.protein;
               sugar = sugar + nutritions.sugar;
-
-
-              
-
+                            
             }
+            h2.textContent = key;
+            h3.textContent = 'Nutritional Facts'
+            liCalories.innerHTML = Math.ceil(JSON.stringify(calories));
+            liCarbohydrates.innerHTML = Math.ceil(JSON.stringify(carbohydrates));
+            liFat.innerHTML = Math.ceil(JSON.stringify(fat));
+            liProtein.innerHTML = Math.ceil(JSON.stringify(protein));
+            liSugar.innerHTML = Math.ceil(JSON.stringify(sugar));
+
             section.appendChild(ul);
             section.appendChild(h3);
             ulTwo.appendChild(liCalories);
