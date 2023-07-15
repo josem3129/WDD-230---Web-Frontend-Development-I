@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <title>Bountiful Foods</title>
 </head>
-<body>
+<body class="fresh">
     <header>
         <div class="headerDiv">
             <a href="index.html"> <img class="logo" src="images/Bauntiful_logo.webp" alt="logo"></a>
@@ -47,20 +47,18 @@
             </a>
         </div>
     </header>
-    <main>
-        <h1 id="joinHeader">Make a smoothy</h1>
+    <main id="fresh">
+        <h1 id="joinHeader">Create a smoothy</h1>
         <form id="joinForm">
             <fieldset>
-                <legend>Smoothy </legend>
-                <!-- <label class="top"> First Name* <input type="text" name="fname"  required></label>
+                <legend>New Smoothy</legend>
+                <label class="top"> First Name* <input type="text" name="fname"  required></label>
                 <label class="top"> Email* <input type="email" name="email"  placeholder="Example@email.com" required></label>
-                <label class="top"> Phone <input type="tel" name="phone" required></label> -->
+                <label class="top"> Phone <input type="tel" name="phone" required></label>
             </fieldset>
-            <fieldset id="selectFruit">
-                
-            </fieldset>
+            <fieldset id="selectFruit"></fieldset>
         </form>
-        <button id="submitBtn">Save Recipe</button>
+        <button id="saveBtn">Save Recipe</button>
         <div id="recipes"></div>
     </main>
     <footer>
