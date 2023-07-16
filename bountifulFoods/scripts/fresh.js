@@ -1,7 +1,6 @@
 const urlFresh = 'https://brotherblazzard.github.io/canvas-content/fruit.json'
 const fieldset = document.querySelector('#selectFruit');
 const cards = document.querySelector('#recipes')
-let section = document.createElement('section');
 let fruits = [];
 let i = 0;
 let recipeNum = 0;
@@ -52,7 +51,7 @@ function smoothyCal(data){
   fieldset.appendChild(note);
 }
 
-document.getElementById('submitBtn').addEventListener("click", () => {
+document.getElementById('saveBtn').addEventListener("click", () => {
 
   for (const key in recipes) {
     if (recipes.hasOwnProperty(key)) {
@@ -109,7 +108,7 @@ function load(){
     for (const key in recipes) {
     if (recipes.hasOwnProperty(key)) {
       // console.log(`${key}: ${recipes[key]}`);
-      
+      let section = document.createElement('section');
       let carbohydrates = 0;
       let protein = 0;
       let fat = 0;
@@ -153,9 +152,9 @@ function load(){
                         
         }
         h2.textContent = key;
-        h3.textContent = 'Nutritional Facts'
-        liCalories.innerHTML = Math.ceil(JSON.stringify(calories));
-        liCarbohydrates.innerHTML = Math.ceil(JSON.stringify(carbohydrates));
+        h3.textContent = 'Total Nutritional Facts'
+        liCalories.innerHTML =`Calories: ${Math.ceil(calories)}`;
+        liCarbohydrates.innerHTML = `Carbohydrates: ${Math.ceil(carbohydrates)}`;
         liFat.innerHTML = Math.ceil(JSON.stringify(fat));
         liProtein.innerHTML = Math.ceil(JSON.stringify(protein));
         liSugar.innerHTML = Math.ceil(JSON.stringify(sugar));
