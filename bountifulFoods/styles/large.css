@@ -36,7 +36,17 @@
         background-color: transparent;
     }
     .compInfo{
-        margin-left: 345px;
+        margin-left: 595px;
+    }
+    .location{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: auto auto auto 0;
+    }
+    .location img{
+        max-height: 90px;
+        margin: auto;
+        margin-top: 30PX;
     }
     main{
         max-width: 1500px;

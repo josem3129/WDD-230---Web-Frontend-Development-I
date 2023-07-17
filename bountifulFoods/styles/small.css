@@ -548,3 +548,7 @@ textarea{
     padding: 10px;
     font-size: 25px;
 }
+.location{
+    color: white;
+    text-decoration: none;
+}
