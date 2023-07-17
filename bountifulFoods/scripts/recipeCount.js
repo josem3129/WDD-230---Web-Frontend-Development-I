@@ -3,6 +3,7 @@ let keys = Object.keys(localStorage)
 let i = keys.length
 let recipesCount = [];
 const span = document.querySelector('#smoothie')
+span.textContent = `No recipes found`;
 
 
 while ( i-- ) {
@@ -15,8 +16,6 @@ item.forEach((item) => {
 
     if (inputLoaded == "recipe"){
         recipesCount = JSON.parse(archive[item]);
-            span.textContent = `${recipesCount.length}`;    
-    }else{
-        span.textContent = `No recipes found`;
+        span.textContent = `${recipesCount.length}`;    
     }
 });
