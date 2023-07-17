@@ -511,6 +511,9 @@ textarea{
     border-radius: 50%;
     max-width: 200px;
 }
+.director a{
+    color: white;
+}
 .contactInfo{
     padding: 2rem;
     border-bottom: 2px solid black;
@@ -518,6 +521,7 @@ textarea{
 .contactInfo h4, .contactInfo address, .contactInfo p, .contactInfo a{
     margin-bottom: 0;
     margin-top: .5rem;
+    color: white;
 
 }
 .contactInfo h3{
