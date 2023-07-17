@@ -1,5 +1,8 @@
 const urlFresh = 'https://brotherblazzard.github.io/canvas-content/fruit.json'
 const fieldset = document.querySelector('#selectFruit');
+const legend = document.createElement('legend');
+legend.textContent = `Choose your fruit`
+fieldset.appendChild(legend);
 const cards = document.querySelector('#recipes')
 let fruits = [];
 let i = 0;
@@ -28,16 +31,19 @@ apiFetch();
 
 function smoothyCal(data){
   const note = document.createElement('textarea');
-
+  const h4 = document.createElement('h4');
   for(i=0; i < 3; i++){
+    let h3 = document.createElement('h3');
     const select = document.createElement('select');
     const optionValue = document.createElement('option');
 
   
     select.setAttribute('id', `fruit${i}` )
     optionValue.setAttribute('value', '')
-    optionValue.innerHTML = 'Please Select &#9662;';
+    optionValue.innerHTML = 'Please Select';
     select.appendChild(optionValue);
+    h3.textContent = `Fruit #${i+1}`
+    fieldset.appendChild(h3);
   
       
     data.forEach(fruit => {
@@ -48,6 +54,8 @@ function smoothyCal(data){
       fieldset.appendChild(select);
     });
   }
+  h4.textContent= `Notes:`;
+  fieldset.appendChild(h4);
   fieldset.appendChild(note);
 }
 
@@ -164,11 +172,11 @@ function load(){
           h3Two.textContent = `Ingredients:`
           h2.textContent = recipe.name;
           h3.textContent = 'Total Nutritional Facts'
-          liCalories.innerHTML =`Calories: ${Math.ceil(calories)}`;
-          liCarbohydrates.innerHTML = `Carbohydrates: ${Math.ceil(carbohydrates)}`;
-          liFat.innerHTML = `fat: ${Math.ceil(fat)}`;
-          liProtein.innerHTML = `protein: ${Math.ceil(protein)}`;
-          liSugar.innerHTML = `sugar: ${Math.ceil(sugar)}`;
+          liCalories.innerHTML =`Calories: ${calories.toFixed(1)}g`;
+          liCarbohydrates.innerHTML = `Carbohydrates: ${carbohydrates.toFixed(1)}g`;
+          liFat.innerHTML = `fat: ${fat.toFixed(1)}g`;
+          liProtein.innerHTML = `protein: ${protein.toFixed(1)}g`;
+          liSugar.innerHTML = `sugar: ${sugar.toFixed(1)}g`;
           h4.textContent = `Notes:`
           p.textContent = recipe.Notes;
 

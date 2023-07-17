@@ -81,5 +81,70 @@
     .title{
         font-size: 2.5rem;
     }
-    
+    .instructions{
+        font-size: 20px;
+    }
+    form{
+        max-width: 650px;
+        font-size: 30px;
+    }
+    fieldset{
+        max-width: 500px;
+    }
+    form label.top{
+        font-size: 25px;
+    }
+    form label.top input{
+        font-size: 1.5rem;
+        max-width: 250px;
+    }
+    #fruit0, #fruit1, #fruit2{
+        font-size: 20px;
+    }
+    #recipes{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #recipes section{
+        width: 100%;
+        max-width: 350px;
+    }
+    #saveBtn{
+        font-size: 25px;
+    }
+    .since{
+        display: flex;
+        padding: 1rem;
+    }
+    .since div p{
+        padding: 15px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .since div h2{
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .fruitDrink{
+        display: grid;
+    }
+    .fruitDrink img, .fruitDrink h3, .fruitDrink span{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 15px;
+    }
+    .fruitDrink img{
+        display: block;
+        margin: 1rem auto 0 auto;
+    }
+    .fruitDrink h3{
+        font-size: 30px;
+        color: black;
+        margin: 120px auto auto auto;
+    }
+    .fruitDrink span{
+        color: black;
+        font-size: 50px;
+        margin: auto;
+    }
 }

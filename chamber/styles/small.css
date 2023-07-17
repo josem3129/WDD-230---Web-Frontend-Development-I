@@ -736,15 +736,7 @@ table{
     max-width: 200px;
 }
 
-.director{
-    padding: 2rem;
-    grid-row: 3/4;
-    border-top: 2px solid black;
-}
-.director h2{
-    margin: 5px auto 0 auto;
-    font-size: 20px;
-}
+
 .contactInfo{
     grid-row: 1/2;
     padding: 2rem;

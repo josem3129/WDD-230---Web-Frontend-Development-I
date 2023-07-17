@@ -2,6 +2,7 @@
 body{
     margin: 0;
     font-family: 'Roboto Mono', monospace;
+    background-color: #255C99;
 }
 
 .logo{
@@ -114,14 +115,25 @@ nav ul li a:hover{
 /*footer*/
 footer{
     color: white;
-    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     text-align: center;
     border-top: 10px solid #F10303;
 }
 footer .media{
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 1/2;
     margin: 0 auto 0 auto;
+}
+.location{
+    width: 100%;
+    height: 100%;
+    max-width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5rem;
+}
+.location img{
+    max-height: 45px;
 }
 .footerImg{
     width: 100%;
@@ -134,13 +146,13 @@ footer .media{
     max-width: 200px;
 }
 .name{
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 1/2;
     border-top: 1px solid white;
     padding: 1rem;
 }
 .compInfo{
-    margin: 150px auto 1rem auto;
+    margin: 150px auto 0 auto;
     color: white;
     font-size: 15px;
     grid-row: 1/3;
@@ -158,10 +170,13 @@ footer .media{
 /*main page*/
 /* hero banner */
 main{
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(4, auto);
     font-family: 'Roboto', sans-serif;   
     text-align: center; 
+    color: white;
+    padding-bottom: 1rem;
 }
 div .hero{
     margin-bottom: 0;
@@ -352,7 +367,7 @@ div .hero{
 form{
     width: 100%;
     max-width: 350px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 15px;
     margin: 1rem auto 1rem auto;
 }
@@ -371,13 +386,22 @@ form label.top, form div{
 form label.top input, form label.top select{
     display: block;
     font-size: 1rem;
-    border: solid 1px black;
+    border: solid 1px white;
     border-radius: 4px;
     padding: .75rem;
-    color: black;
+    color: white;
     width: 100%;
     max-width: 200px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.5);
+}
+form label.top input:required{
+    border-bottom: red solid 4px;
+}
+form label.top input:required:valid{
+    border-bottom: green solid;
+}
+legend{
+    padding: .5rem;
 }
 #selectFruit {
     display: flex;
@@ -385,10 +409,19 @@ form label.top input, form label.top select{
     max-height: 400px;
 }
 
+#selectFruit h3, #selectFruit h4{
+    font-size: 15px;
+    margin: 1rem 0 0 0;
+}
+
+#selectFruit h4{
+    font-size: 20px;
+}
+
 #fruit0,#fruit1,#fruit2{
     width: 100%;
     max-width: 200px;
-    margin: 1rem auto 0 0;
+    margin: 0 auto 0 0;
     vertical-align: middle;
     height: 2.2em;
     padding: 0.3em 0.6em;
@@ -409,44 +442,27 @@ form label.top input, form label.top select{
   background-color: #fff;
   border-radius: 24px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px 1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   color: #3c4043;
   cursor: pointer;
-  display: inline-flex;
-  fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 500;
   height: 48px;
   justify-content: center;
   letter-spacing: .25px;
-  line-height: normal;
   max-width: 100%;
-  overflow: visible;
   padding: 2px 24px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   width: auto;
-  will-change: transform,opacity;
-  z-index: 0;
 }
 
 #saveBtn:hover {
-  background: #F6F9FE;
-  color: #174ea6;
+  background: rgba(0, 0, 0, .8);
+  color: white;
 }
 
 textarea{
     max-height: 200px;
 }
 
-#recipes section ul li{
+#recipes section ul li, .instructions ul li{
     list-style: none;
     text-align: left;
 }
@@ -458,7 +474,7 @@ textarea{
     margin: 1rem auto 0 auto;
     background-color: #262626;
     color: white;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-shadow: rgba(0, 0, 0, .8) 0 3px 5px 2px;
 }
 #recipes section h2{
     border-bottom: 2px solid #fdc43c;
@@ -466,7 +482,69 @@ textarea{
     margin: 0;
     font-size: 35px;
 }
+.instructions ul li{
+    padding: 8px;
+}
+.instructions{
+    width: 100%;
+}
+.instructions h2{
+    font-size: 30px;
+}
+/*abount us*/
+#aboutMain{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    width: 100%;
+}
+.director{
+    padding: 2rem;
+    grid-row: 3/4;
+    border-top: 5px solid black;
+}
+.director h2{
+    margin: 5px auto 0 auto;
+    font-size: 20px;
+}
+.director img{
+    border-radius: 50%;
+    max-width: 200px;
+}
+.contactInfo{
+    padding: 2rem;
+    border-bottom: 2px solid black;
+}
+.contactInfo h4, .contactInfo address, .contactInfo p, .contactInfo a{
+    margin-bottom: 0;
+    margin-top: .5rem;
 
-.fresh footer{
+}
+.contactInfo h3{
+    font-size: 30px;
+}
+.since img{
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem auto 0 auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 0 black;
+}
+.fruitDrink{
+    /* display: grid; */
+    background-color: #6c3d1ca8;
     margin-top: 1rem;
+    padding: 1rem;
+}
+
+.fruitDrink img{
+    display: none;
+}
+.fruitDrink h3{
+    color: white;
+    margin-top: 30px;
+}
+.fruitDrink span{
+    padding: 10px;
+    font-size: 25px;
 }

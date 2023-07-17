@@ -32,9 +32,9 @@
         <nav id="navHeader">
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
-                <li><a href="contact.html">About Us</a></li>
+                <li class="active"><a href="#">About Us</a></li>
             </ul>
         </nav>
         <div class="media">
@@ -48,51 +48,33 @@
             </a>
         </div>
     </header>
-    <main>
-        <div class="hero">
-            <picture class="hero">
-                <source class="hero" srcset="images/strawberry-Large.webp"
-                    media="(min-width:1070px)">
-                <source class="hero" srcset="images/strawberry_medium.webp" media="(min-width:800px) and (max-width: 1051px)">
-                <img class="hero" src="images/strawberry_small.webp" alt="strawberry">
-            </picture>
-            <h2>Try our products any day any time</h2>
-            <button>Learn More</button>
-        </div>
-        <div class="coastalArea">
-            <img src="images/sandiegobotanic.webp" alt="Sandiego Botanic">
-            <div class="coastColor">
-                <p>San Diego Botanic Garden has committed to create, maintain and grow a welcoming and inclusive
-                    environment. Just as our natural
-                    world relies on plant diversity, we believe that cultivating diversity amongst our staff,
-                    volunteers, business partners, and visitors
-                    contributes to a flourishing Garden. We are dedicated to ongoing conversations as we celebrate and
-                    support the unique attributes of all
-                    people.</p>
-                <button>More Info</button>
+    <main id="aboutMain">
+        <div class="since">
+            <img src="images/farmFildImg.jpg" alt="strawberryFields" loading="lazy">
+            <div>
+                <h2>Since 1955</h2>
+                <p>Bountiful foods has been working with all farmers of america to bring to your tables only but the highest quality of fruits. since the beginning we vision our self to become the trusted company that can come in to your homes to bring all the fruits and produce yuo need. We wanted to help our local community and farmers to grow and expand. Many years have passed and we still have the same vision but now we serve all communities in our country </p>
             </div>
         </div>
-        <div class="weatherCards">
-            <h2>Weather of Nampa</h2>
-            <div id="weatherInfo">
-                <img src="images/favicon.ico" alt="Weather" id="weather-icon" loading="lazy">
-                <span id="temp"></span>
-                <div class="weatherTitle"></div>
-                <div id="numbers">
-                    <span id="windChill"></span>
-                    <span id="wind"></span>
-                </div>
-            </div>
-            <section id="forecastCards">
-                <h2 class="title">3 day forecast</h2>
-            </section>
+        <div class="director">
+            <img src="images/Ricardo.webp" alt="Sales Rep" loading="lazy">
+            <h2>Ricardo J Kuntz (Sales Rep)</h2>
+            <p>Office: (317) 654-5674</p>
+            <a href="mailto:name@gmail.com">freddy.sipe2@yahoo.com</a>
         </div>
-        <div class="fruitDrink">
-            <img src="images/recipeImg.webp" alt="recipe book" loading="lazy">
-            <h3>Amount of recipes Saved:</h3>
-            <span id="smoothie"></span>
-            
+        <div class="contactInfo">
+            <h3>Contact Us</h3>
+            <h4>Address</h4>
+            <address>1095 Hoover St, Carlsbad CA</address>
+            <h4>Office hours</h4>
+            <p>Mon - Fry</p>
+            <p>9am - 4pm</p>
+            <h4>Phone</h4>
+            <a href="tel:+12083145456">(317) 654-5674</a>
+            <h4>Email</h4>
+            <a href="mailto:emailr@gmail.com">freddy.sipe2@yahoo.com</a>
         </div>
+
     </main>
     <footer>
         <a class="footerImg" href="index.html"><img class="footerLogo" src="images/Bauntiful_logo.webp" alt="logo"></a>
@@ -122,7 +104,6 @@
     </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/weatherapi.js"></script>
-    <script src="scripts/recipeCount.js"></script>
 </body>
 
 </html>
