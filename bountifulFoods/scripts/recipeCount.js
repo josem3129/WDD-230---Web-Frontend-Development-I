@@ -15,10 +15,8 @@ item.forEach((item) => {
 
     if (inputLoaded == "recipe"){
         recipes = JSON.parse(archive[item]);
-        if(recipes !== 0){
-            span.textContent = `${recipes.length}`;
-        }else{
-            span.textContent = `No recipes found`;
-        }
+            span.textContent = `${recipes.length}`;    
+    }else{
+        span.textContent = `No recipes found`;
     }
 });
