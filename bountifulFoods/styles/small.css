@@ -518,15 +518,19 @@ textarea{
     padding: 2rem;
     border-bottom: 2px solid black;
 }
-.contactInfo h4, .contactInfo address, .contactInfo p, .contactInfo a{
+.contactInfo p, .contactInfo a{
     margin-bottom: 0;
     margin-top: .5rem;
     color: white;
 
 }
+.contactInfo h4, .contactInfo address{
+    margin-bottom: .5rem;
+}
 .contactInfo h3{
     font-size: 30px;
 }
+
 .since img{
     width: 100%;
     max-width: 350px;
@@ -559,4 +563,9 @@ textarea{
 label{
     display: flex;
     flex-direction: column;
+}
+.map img{
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 300px;
 }

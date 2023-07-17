@@ -152,9 +152,17 @@
         grid-row: 2/3;
     }
     .contactInfo{
+        padding: 0 2rem 2rem 2rem;
         border-bottom: none;
         border-top: 5px solid black;
+        display: flex;
     }
+    .map img{
+        max-width: 450px;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    
     .fruitDrink{
         display: grid;
         max-width: fit-content;
