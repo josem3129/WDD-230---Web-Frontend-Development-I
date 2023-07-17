@@ -556,3 +556,7 @@ textarea{
     color: white;
     text-decoration: none;
 }
+label{
+    display: flex;
+    flex-direction: column;
+}
