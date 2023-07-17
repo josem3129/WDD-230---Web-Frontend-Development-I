@@ -128,11 +128,15 @@
     }
     .since div{
         max-width: 500px;
-        max-height: 300px;
-        background-color: #fdc33c82;
+        max-height: 340px;
+        background-color: #fdc33ccb;
         margin: 300px auto 100px 600px;
+        color: black;
     }
     
+    .since div p{
+        font-size: 22px;
+    }
     .director{
         grid-column: 1/2;
         grid-row: 2/3;
