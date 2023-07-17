@@ -114,8 +114,7 @@ function load(){
   item.forEach((item) => {
   let inputLoaded = item;
   
-  if (inputLoaded == "visit-counter" || inputLoaded =="visitcounte"){
-  }else{
+  if (inputLoaded == "recipe"){
     recipes = JSON.parse(archive[item]);
     console.log(recipes);
     for(let i = 0; i < recipes.length; i++){
@@ -196,12 +195,8 @@ function load(){
   
           });
         })
-      // }
-
-      // }
     }
   }
   })
-  console.log(recipes);
 
 }
