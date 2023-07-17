@@ -90,8 +90,8 @@ document.getElementById('saveBtn').addEventListener("click", () => {
     recipeInfo[`name`] = `recipe-${recipeNum}`;
     recipeInfo[`ingredient`] = `${valueOne},${valueTwo},${valueThree}`;
     recipeInfo[`Notes`] = `${note}`;
-    recipes.push(recipeInfo)
-    localStorage.setItem(storageName, JSON.stringify(recipes))
+    recipes.push(recipeInfo);
+    localStorage.setItem(storageName, JSON.stringify(recipes));
   }
   recipeNum = 0;
   cards.innerHTML = "";
