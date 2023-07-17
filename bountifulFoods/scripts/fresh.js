@@ -4,7 +4,7 @@ const cards = document.querySelector('#recipes')
 let fruits = [];
 let i = 0;
 let recipeNum = 0;
-let recipes = {};
+let recipes = [];
 async function apiFetch() {
   try {
     const response = await fetch(urlFresh);
@@ -53,6 +53,9 @@ function smoothyCal(data){
 
 document.getElementById('saveBtn').addEventListener("click", () => {
 
+  recipeInfo = {};
+  let list = [];
+
   for (const key in recipes) {
     if (recipes.hasOwnProperty(key)) {
 
@@ -74,11 +77,14 @@ document.getElementById('saveBtn').addEventListener("click", () => {
   if(valueOne == "" || valueTwo == "" || valueThree == ""){
     alert('please choose one option')
   }else{
-    recipes[`recipe${recipeNum}`] = `${valueOne},${valueTwo},${valueThree}`;
+    recipeInfo[`name`] = `recipe-${recipeNum}`;
+    recipeInfo[`ingredient`] = `${valueOne},${valueTwo},${valueThree}`;
+    recipeInfo[`Notes`] = `${note}`;
+    recipes.push(recipeInfo)
     localStorage.setItem(storageName, JSON.stringify(recipes))
   }
   recipeNum = 0;
-  section.innerHTML = "";
+  cards.innerHTML = "";
   load();
 
 });
@@ -99,86 +105,90 @@ function load(){
   let inputLoaded = item;
   
   if (inputLoaded == "visit-counter" || inputLoaded =="visitcounte"){
-      
   }else{
-      
     recipes = JSON.parse(archive[item]);
     console.log(recipes);
-
-    for (const key in recipes) {
-    if (recipes.hasOwnProperty(key)) {
-      // console.log(`${key}: ${recipes[key]}`);
-      let section = document.createElement('section');
-      let carbohydrates = 0;
-      let protein = 0;
-      let fat = 0;
-      let sugar = 0;
-      let calories = 0;
-      let h2 = document.createElement('h2');
-      let ul =  document.createElement('ul');
-      let h3 =  document.createElement('h3');
-      let ulTwo = document.createElement('ul');
-      let liCarbohydrates =  document.createElement('li');
-      let liProtein =  document.createElement('li');
-      let liFat =  document.createElement('li');
-      let liSugar =  document.createElement('li');
-      let liCalories =  document.createElement('li');
-
-      
-      cards.appendChild(section);
-      section.appendChild(h2);
-      
-      
-          
-
-      let storageFruit = recipes[key].split(',');
-      storageFruit.forEach(element =>{
+    for(let i = 0; i < recipes.length; i++){
+      let recipe = recipes[i];
+      // for (const key in recipe) {
+      // if (recipes.hasOwnProperty(key)) {
+        // console.log(`${key}: ${recipes[key]}`);
+        let section = document.createElement('section');
+        let carbohydrates = 0;
+        let protein = 0;
+        let fat = 0;
+        let sugar = 0;
+        let calories = 0;
+        let h2 = document.createElement('h2');
+        let ul =  document.createElement('ul');
+        let h3 =  document.createElement('h3');
+        let h3Two = document.createElement('h3');
+        let ulTwo = document.createElement('ul');
+        let liCarbohydrates =  document.createElement('li');
+        let liProtein =  document.createElement('li');
+        let liFat =  document.createElement('li');
+        let liSugar =  document.createElement('li');
+        let liCalories =  document.createElement('li');
+        let h4 = document.createElement('h4');
+        let p = document.createElement('p');
+  
+        
+        cards.appendChild(section);
+        section.appendChild(h2);
+        section.appendChild(h3Two);
+        
+        
             
-        fruits.forEach(fruit => {
-        let option = fruit.name;
-        
-        if(option == element){
-            let nutritions = fruit.nutritions;
-          console.log(option);
-          let li =  document.createElement('li');
-          li.textContent = element;
-          ul.appendChild(li);
+  
+        let storageFruit = recipe.ingredient.split(',');
+        storageFruit.forEach(element =>{
+              
+          fruits.forEach(fruit => {
+          let option = fruit.name;
+          
+          if(option == element){
+              let nutritions = fruit.nutritions;
+            console.log(option);
+            let li =  document.createElement('li');
+            li.textContent = element;
+            ul.appendChild(li);
+  
+            calories = calories + nutritions.calories;
+            carbohydrates = carbohydrates + nutritions.carbohydrates;
+            fat = fat + nutritions.fat;
+            protein = protein + nutritions.protein;
+            sugar = sugar + nutritions.sugar;
+                          
+          }
+          
+          h3Two.textContent = `Ingredients:`
+          h2.textContent = recipe.name;
+          h3.textContent = 'Total Nutritional Facts'
+          liCalories.innerHTML =`Calories: ${Math.ceil(calories)}`;
+          liCarbohydrates.innerHTML = `Carbohydrates: ${Math.ceil(carbohydrates)}`;
+          liFat.innerHTML = `fat: ${Math.ceil(fat)}`;
+          liProtein.innerHTML = `protein: ${Math.ceil(protein)}`;
+          liSugar.innerHTML = `sugar: ${Math.ceil(sugar)}`;
+          h4.textContent = `Notes:`
+          p.textContent = recipe.Notes;
 
-          calories = calories + nutritions.calories;
-          carbohydrates = carbohydrates + nutritions.carbohydrates;
-          fat = fat + nutritions.fat;
-          protein = protein + nutritions.protein;
-          sugar = sugar + nutritions.sugar;
-                        
-        }
-        h2.textContent = key;
-        h3.textContent = 'Total Nutritional Facts'
-        liCalories.innerHTML =`Calories: ${Math.ceil(calories)}`;
-        liCarbohydrates.innerHTML = `Carbohydrates: ${Math.ceil(carbohydrates)}`;
-        liFat.innerHTML = Math.ceil(JSON.stringify(fat));
-        liProtein.innerHTML = Math.ceil(JSON.stringify(protein));
-        liSugar.innerHTML = Math.ceil(JSON.stringify(sugar));
+          section.appendChild(ul);
+          section.appendChild(h4);
+          section.appendChild(p);
+          section.appendChild(h3);
+          ulTwo.appendChild(liCalories);
+          ulTwo.appendChild(liCarbohydrates);
+          ulTwo.appendChild(liFat);
+          ulTwo.appendChild(liProtein);
+          ulTwo.appendChild(liProtein);
+          ulTwo.appendChild(liSugar);
+          section.appendChild(ulTwo);
+  
+          });
+        })
+      // }
 
-        section.appendChild(ul);
-        section.appendChild(h3);
-        ulTwo.appendChild(liCalories);
-        ulTwo.appendChild(liCarbohydrates);
-        ulTwo.appendChild(liFat);
-        ulTwo.appendChild(liProtein);
-        ulTwo.appendChild(liProtein);
-        ulTwo.appendChild(liSugar);
-        section.appendChild(ulTwo);
-
-        });
-
-
-        
-
-    })
-    
-
-
-      }
+      // }
     }
   }
   })

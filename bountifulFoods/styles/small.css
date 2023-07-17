@@ -448,14 +448,23 @@ textarea{
 
 #recipes section ul li{
     list-style: none;
+    text-align: left;
 }
 
 #recipes section{
-    border: 2px solid black;
+    border: 4px solid #F10303;
     width: 100%;
     max-width: 250px;
     margin: 1rem auto 0 auto;
+    background-color: #262626;
+    color: white;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+#recipes section h2{
+    border-bottom: 2px solid #fdc43c;
+    padding: 1rem;
+    margin: 0;
+    font-size: 35px;
 }
 
 .fresh footer{
