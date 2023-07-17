@@ -13,8 +13,6 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       const forecastData = await forecastResponse.json();
-      console.log(data); 
-      console.log(forecastData); 
       displayResults(data);
       forecast(forecastData.list);
       // this is for testing the call

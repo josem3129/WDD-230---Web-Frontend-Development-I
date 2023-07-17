@@ -14,7 +14,6 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       fruits = data;
-      console.log(data); 
       smoothyCal(data);        
       load();
 
@@ -79,9 +78,7 @@ document.getElementById('saveBtn').addEventListener("click", () => {
   const valueThree = document.querySelector('#fruit2').value;
   const note= document.querySelector('textarea').value;
 
-  console.log(valueOne);
-  console.log(valueTwo);
-  console.log(valueThree);
+
 
   if(valueOne == "" || valueTwo == "" || valueThree == ""){
     alert('please choose one option')
@@ -115,12 +112,9 @@ function load(){
   
   if (inputLoaded == "recipe"){
     recipes = JSON.parse(archive[item]);
-    console.log(recipes);
     for(let i = 0; i < recipes.length; i++){
       let recipe = recipes[i];
-      // for (const key in recipe) {
-      // if (recipes.hasOwnProperty(key)) {
-        // console.log(`${key}: ${recipes[key]}`);
+   
         let section = document.createElement('section');
         let carbohydrates = 0;
         let protein = 0;
@@ -156,7 +150,6 @@ function load(){
           
           if(option == element){
               let nutritions = fruit.nutritions;
-            console.log(option);
             let li =  document.createElement('li');
             li.textContent = element;
             ul.appendChild(li);
