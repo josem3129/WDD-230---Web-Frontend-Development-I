@@ -13,9 +13,7 @@ let item = Object.keys(archive)
 item.forEach((item) => {
     let inputLoaded = item;
 
-    if (inputLoaded == "visit-counter" || inputLoaded =="visitedCount"){
-        span.textContent = `No recipes found`;
-    }else{
+    if (inputLoaded == "recipe"){
         recipes = JSON.parse(archive[item]);
         if(recipes !== 0){
             span.textContent = `${recipes.length}`;
