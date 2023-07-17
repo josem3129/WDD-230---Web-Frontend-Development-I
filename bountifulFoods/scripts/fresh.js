@@ -56,7 +56,9 @@ function smoothyCal(data){
   }
   h4.textContent= `Notes:`;
   fieldset.appendChild(h4);
-  fieldset.appendChild(note);
+  const label = document.createElement('label');
+  label.appendChild(note);
+  fieldset.appendChild(label);
 }
 
 document.getElementById('saveBtn').addEventListener("click", () => {
