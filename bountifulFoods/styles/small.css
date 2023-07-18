@@ -201,7 +201,7 @@ div .hero{
 .hero h2{
     text-align: center;
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     max-width: fit-content;
     max-height: 85px;
@@ -219,8 +219,7 @@ div .hero{
     border-radius: 12px;
     max-width: 150px;
     max-height: 45px;
-    margin-left: 200px;
-    margin-top: 300px;
+    margin: 300px auto 16px 200px;
     cursor: pointer;
     box-shadow: 5px 10px 8px #292727;
 }
