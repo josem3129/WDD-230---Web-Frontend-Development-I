@@ -354,7 +354,7 @@ div .hero{
 form{
     width: 100%;
     max-width: 350px;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 15px;
     margin: 1rem auto 1rem auto;
 }
@@ -365,12 +365,12 @@ fieldset{
     margin: 2rem auto 2rem auto;
     text-align: left;
 }
-form label.top, form div{
+form .top label, form div{
     display: block;
     padding-top: 1rem;
     font-size: 1rem;
 }
-form label.top input, form label.top select{
+form .top label input, form .top label select{
     display: block;
     font-size: 1rem;
     border: solid 1px white;
@@ -379,12 +379,12 @@ form label.top input, form label.top select{
     color: white;
     width: 100%;
     max-width: 200px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.341);
 }
-form label.top input:required{
+form .top label input:required{
     border-bottom: red solid 4px;
 }
-form label.top input:required:valid{
+form .top label input:required:valid{
     border-bottom: green solid;
 }
 legend{
@@ -449,9 +449,12 @@ textarea{
     max-height: 200px;
 }
 
-#recipes section ul li, .instructions ul li{
+#recipes section ul li,#recipes section p, .instructions ul li{
     list-style: none;
     text-align: left;
+}
+#recipes section p{
+    margin-left: 2.4rem;
 }
 
 #recipes section{
@@ -464,10 +467,17 @@ textarea{
     box-shadow: rgba(0, 0, 0, .8) 0 3px 5px 2px;
 }
 #recipes section h2{
-    border-bottom: 2px solid #fdc43c;
+    /* border-bottom: 2px solid #fdc43c; */
     padding: 1rem;
-    margin: 0;
+    margin: auto;
     font-size: 35px;
+    max-width: 330px;
+}
+#recipes section h3{
+    border-top: 2px solid #fdc43c;
+    margin: auto;
+    max-width: 330px;
+    padding-top: 5px;
 }
 .instructions ul li{
     padding: 8px;
@@ -517,16 +527,25 @@ textarea{
 .contactInfo h3{
     font-size: 30px;
 }
-
+.since{
+    background-color: #6c3d1ceb;
+    margin: 0;
+    width: 100%;
+    
+}
 .since img{
     width: 100%;
     max-width: 350px;
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px 0 black;
+    box-shadow: 5px 5px 5px 0 black;
+}
+.since p{
+    width: 100%;
+    max-width: 370px;
+    text-align: center;
 }
 .fruitDrink{
-    /* display: grid; */
     background-color: #6c3d1ca8;
     margin-top: 1rem;
     padding: 1rem;
@@ -557,4 +576,7 @@ label{
     margin-top: 1rem;
     width: 100%;
     max-width: 300px;
+}
+#formInfo{
+    background-color: #6c3d1ceb;
 }

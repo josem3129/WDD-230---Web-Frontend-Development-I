@@ -63,6 +63,8 @@ document.getElementById('saveBtn').addEventListener("click", () => {
 
   recipeInfo = {};
   let list = [];
+ const localDate = new Date().toLocaleDateString('en-US');
+
 
   for (const key in recipes) {
     if (recipes.hasOwnProperty(key)) {
@@ -76,6 +78,9 @@ document.getElementById('saveBtn').addEventListener("click", () => {
   const valueOne = document.querySelector('#fruit0').value;
   const valueTwo = document.querySelector('#fruit1').value;
   const valueThree = document.querySelector('#fruit2').value;
+  const labelPhone = document.querySelector('.topPhone').value;
+  const labelName = document.querySelector('.topName').value;
+  const labelEmail = document.querySelector('.topEmail').value;
   const note= document.querySelector('textarea').value;
 
 
@@ -83,7 +88,11 @@ document.getElementById('saveBtn').addEventListener("click", () => {
   if(valueOne == "" || valueTwo == "" || valueThree == ""){
     alert('please choose one option')
   }else{
-    recipeInfo[`name`] = `recipe-${recipeNum}`;
+    recipeInfo[`name`] = `${labelName}`;
+    recipeInfo[`phone`] = `${labelPhone}`;
+    recipeInfo[`email`] = `${labelEmail}`;
+    recipeInfo[`date`] = `${localDate}`;
+    recipeInfo[`recipeName`] = `Recipe #${recipeNum}`;
     recipeInfo[`ingredient`] = `${valueOne},${valueTwo},${valueThree}`;
     recipeInfo[`Notes`] = `${note}`;
     recipes.push(recipeInfo);
@@ -121,6 +130,11 @@ function load(){
         let fat = 0;
         let sugar = 0;
         let calories = 0;
+        let h3Recipe = document.createElement('h3');
+        let name = document.createElement('p');
+        let phone = document.createElement('p');
+        let email = document.createElement('p');
+        let date = document.createElement('p');
         let h2 = document.createElement('h2');
         let ul =  document.createElement('ul');
         let h3 =  document.createElement('h3');
@@ -136,7 +150,7 @@ function load(){
   
         
         cards.appendChild(section);
-        section.appendChild(h2);
+        section.appendChild(h3Recipe);
         section.appendChild(h3Two);
         
         
@@ -161,9 +175,13 @@ function load(){
             sugar = sugar + nutritions.sugar;
                           
           }
-          
+          h3Recipe.textContent = `Information`
+          name.textContent = `Name: ${recipe.name}`
+          phone.textContent = `Phone: ${recipe.phone}`
+          email.textContent = `Email: ${recipe.email}`
+          date.textContent = `Date submitted: ${recipe.date}`
           h3Two.textContent = `Ingredients:`
-          h2.textContent = recipe.name;
+          h2.textContent = recipe.recipeName;
           h3.textContent = 'Total Nutritional Facts'
           liCalories.innerHTML =`Calories: ${calories.toFixed(1)}g`;
           liCarbohydrates.innerHTML = `Carbohydrates: ${carbohydrates.toFixed(1)}g`;
@@ -173,6 +191,13 @@ function load(){
           h4.textContent = `Notes:`
           p.textContent = recipe.Notes;
 
+          section.appendChild(h2);
+          section.appendChild(h3Recipe);
+          section.appendChild(name);
+          section.appendChild(phone);
+          section.appendChild(email);
+          section.appendChild(date);
+          section.appendChild(h3Two);
           section.appendChild(ul);
           section.appendChild(h4);
           section.appendChild(p);

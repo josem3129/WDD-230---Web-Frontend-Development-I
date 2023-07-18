@@ -57,25 +57,27 @@
             </picture>
             <h2 id="joinHeader">Create a smoothy</h2>
         </div>
-        <div class="instructions">
-            <h2>Instructions:</h2>
-            <ul>
-                <li>1. Enter your Name, Email and address</li>
-                <li>2. Choose three ingredients to create all kinds of smoothies</li>
-                <li>3. If needed add any notes to your recipe, so you can't forget the best ways to serve this recipes</li>
-                <li>4. Click the "save button" to save you creation!</li>
-            </ul>
+        <div id="formInfo">
+            <div class="instructions">
+                <h2>Instructions:</h2>
+                <ul>
+                    <li>1. Enter your Name, Email and address</li>
+                    <li>2. Choose three ingredients to create all kinds of smoothies</li>
+                    <li>3. If needed add any notes to your recipe, so you can't forget the best ways to serve this recipes</li>
+                    <li>4. Click the "save button" to save you creation!</li>
+                </ul>
+            </div>
+            <form id="joinForm">
+                <fieldset class="top">
+                    <legend>Your Info</legend>
+                    <label> First Name* <input class="topName" type="text" name="fname"  required></label>
+                    <label> Email* <input  class="topEmail" type="email" name="email"  placeholder="Example@email.com" required></label>
+                    <label> Phone <input class="topPhone" type="tel" name="phone" required></label>
+                </fieldset>
+                <fieldset id="selectFruit"></fieldset>
+            </form>
+            <button id="saveBtn">Save Recipe</button>
         </div>
-        <form id="joinForm">
-            <fieldset>
-                <legend>New Smoothy</legend>
-                <label class="top"> First Name* <input type="text" name="fname"  required></label>
-                <label class="top"> Email* <input type="email" name="email"  placeholder="Example@email.com" required></label>
-                <label class="top"> Phone <input type="tel" name="phone" required></label>
-            </fieldset>
-            <fieldset id="selectFruit"></fieldset>
-        </form>
-        <button id="saveBtn">Save Recipe</button>
         <div id="recipes"></div>
     </main>
     <footer>
