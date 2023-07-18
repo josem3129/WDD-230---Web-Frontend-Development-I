@@ -60,7 +60,8 @@
     .hero button{
         font-size: 30px;
         max-width: 300px;
-        padding: 30px;
+        max-height: 300px;
+        padding: 10px;
         margin: auto;
     }
     .coastalArea img{
