@@ -57,7 +57,15 @@
     #weatherInfo{
         grid-column: 1/2;
         grid-row: 2/3;
+        font-size: 30px;
+    }
+    #temp{
         font-size: 35px;
+        padding-bottom: 15px;
+    }
+    .WeatherDay{
+        margin-bottom: 1rem;
+        font-size: 55px;
     }
     #forecastCards{
         grid-column: 1/2;

@@ -291,10 +291,16 @@ div .hero{
     margin-right: auto;
 }
 .weatherCards h2{
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 .weatherCards img{
     max-width: 100px;
+}
+#forecastCards section h5{
+    margin-top: -20px;
+}
+div h5{
+    margin-top: 10px;
 }
 #weatherInfo, #forecastCards{
     max-width: 300px;
@@ -314,6 +320,7 @@ div .hero{
 }
 #temp{
     border-bottom: 4px solid  #FDC43C;
+    font-size: 30px;
 }
 .weatherTitle{
     margin-top: 6px;
